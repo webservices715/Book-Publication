@@ -16,7 +16,11 @@
           >
         </div>
         <div class="flex gap-12 items-center">
-          <a href="#" class="hover:text-yellow-500 text-2xl transition duration-300 hidden md:block">Home</a>
+          <a
+            href="#"
+            class="hover:text-yellow-500 text-2xl transition duration-300 hidden md:block"
+            >Home</a
+          >
           <a
             href="#"
             class="bg-yellow-500 text-zinc-800 px-4 py-2 rounded hover:bg-yellow-600 transition duration-300 text-lg md:text-2xl md:px-6 md:py-3"
@@ -25,5 +29,73 @@
         </div>
       </div>
     </nav>
+
+    <div class="relative h-screen overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+          style="background-image: url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')"
+          id="slide1"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+          style="background-image: url('https://static6.depositphotos.com/1000423/585/i/450/depositphotos_5850248-stock-photo-nature-landscape-with-clouds.jpg')"
+          id="slide2"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+          style="background-image: url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg')"
+          id="slide3"
+        ></div>
+      </div>
+      <div
+        class="relative z-10 flex flex-col items-start justify-center h-full p-8 text-white bg-zinc-800 bg-opacity-50"
+      >
+        <p class="text-sm uppercase tracking-wider">
+          Aliya Books Publication 02
+        </p>
+        <h1 class="mt-2 text-5xl font-bold">
+          Unique Solutions For Your Earning
+        </h1>
+        <p class="mt-4 text-lg">
+          Novel Book writing is a home-based job. You will receive books with an
+          instruction manual at your home. You just have to copy down text as
+          per instruction. No editing, no modification, no diagram. The project
+          will be dispatched by courier and the same way you have to send
+          completed work.
+        </p>
+        <div class="mt-6">
+          <button
+            class="px-6 py-3 mr-4 text-lg font-semibold text-black bg-white rounded-lg"
+          >
+            Get Started
+          </button>
+          <button
+            class="px-6 py-3 text-lg font-semibold text-white border border-white rounded-lg"
+          >
+            Learn More →
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    <script>
+      const slides = document.querySelectorAll('[id^="slide"]');
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? "1" : "0";
+        });
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      setInterval(nextSlide, 3000); // Change image every 3 seconds
+      showSlide(currentSlide);
+    </script>
   </body>
 </html>
