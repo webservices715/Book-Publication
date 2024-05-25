@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <nav class="bg-zinc-800 text-white px-6 md:py-12 py-8">
+    <nav class="bg-zinc-800 text-white px-6 md:py-10 py-8">
       <div class="container mx-auto flex justify-between items-center">
-        <div class="font-bold w-[50%] text-2xl">
+        <div class="font-bold text-2xl">
           <a href="#" class="hover:text-yellow-500 transition duration-300"
             >Books Publication</a
           >
@@ -30,7 +30,7 @@
       </div>
     </nav>
 
-    <div class="relative h-screen overflow-hidden">
+    <header class="relative h-screen overflow-hidden">
       <div class="absolute inset-0 z-0">
         <div
           class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
@@ -48,44 +48,52 @@
           id="slide3"
         ></div>
       </div>
-      <div
-        class="relative z-10 flex flex-col items-start justify-center h-full p-8 text-white bg-zinc-800 bg-opacity-50"
-      >
-        <p class="text-sm uppercase tracking-wider">
-          Aliya Books Publication 02
-        </p>
-        <h1 class="mt-2 text-5xl font-bold">
-          Unique Solutions For Your Earning
-        </h1>
-        <p class="mt-4 text-lg">
-          Novel Book writing is a home-based job. You will receive books with an
-          instruction manual at your home. You just have to copy down text as
-          per instruction. No editing, no modification, no diagram. The project
-          will be dispatched by courier and the same way you have to send
-          completed work.
-        </p>
-        <div class="mt-6">
-          <button
-            class="px-6 py-3 mr-4 text-lg font-semibold text-black bg-white rounded-lg"
-          >
-            Get Started
-          </button>
-          <button
-            class="px-6 py-3 text-lg font-semibold text-white border border-white rounded-lg"
-          >
-            Learn More →
-          </button>
+      <div class="relative z-10 flex flex-col items-start pt-24 px-16 h-full  text-white bg-zinc-800 bg-opacity-50">
+        <div class="max-w-3xl">
+          <div class="flex items-center gap-3">
+            <span class="bg-yellow-500 w-8 h-[2.4px]"> </span>
+            <p class="text-xl md:text-2xl uppercase py-6 tracking-wider">
+              Aliya Books Publication 02
+            </p>
+          </div>
+          <h1 class="py-2 text-4xl md:text-6xl font-bold">
+            Unique Solutions For Your Earning
+          </h1>
+          <p class="py-4 text-lg md:text-lg text-gray-200 leading-relaxed">
+            Novel Book writing is a home-based job. You will receive books with an
+            instruction manual at your home. You just have to copy down text as
+            per instruction. No editing, no modification, no diagram. The project
+            will be dispatched by courier and the same way you have to send
+            completed work.
+          </p>
+          
+          <div class="mt-6 flex flex-col md:flex-row">
+            <button
+              class="px-6 py-3 mr-0 md:mr-4 mb-4 md:mb-0 text-lg font-semibold text-black bg-white rounded-lg"
+            >
+              Get Started
+            </button>
+            <button
+              class="px-6 py-3 text-lg font-semibold text-white border border-white rounded-lg"
+            >
+              Learn More →
+            </button>
+          </div>
         </div>
       </div>
-      
+    </header>
+
+    <div class="h-screen">
+      <h1>hello</h1>
     </div>
+
     <script>
       const slides = document.querySelectorAll('[id^="slide"]');
       let currentSlide = 0;
 
       function showSlide(index) {
         slides.forEach((slide, i) => {
-          slide.style.opacity = i === index ? "1" : "0";
+          slide.style.opacity = i === index ? '1' : '0';
         });
       }
 
