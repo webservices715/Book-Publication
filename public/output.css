@@ -677,6 +677,10 @@ video {
   margin-right: -12rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -727,6 +731,54 @@ video {
 
 .h-12{
   height: 3rem;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-\[100px\]{
+  height: 100px;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-\[00px\]{
+  height: 00px;
+}
+
+.h-\[560px\]{
+  height: 560px;
+}
+
+.h-\[540px\]{
+  height: 540px;
+}
+
+.h-\[50px\]{
+  height: 50px;
+}
+
+.h-\[400px\]{
+  height: 400px;
+}
+
+.h-\[0px\]{
+  height: 0px;
+}
+
+.h-\[490px\]{
+  height: 490px;
 }
 
 .w-6{
@@ -983,6 +1035,10 @@ video {
   padding: 3rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1082,6 +1138,10 @@ video {
 
 .pt-16{
   padding-top: 4rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-Josefin{
@@ -1453,6 +1513,10 @@ video {
     width: 70%;
   }
 
+  .md\:w-2\/3{
+    width: 66.666667%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1463,6 +1527,10 @@ video {
 
   .md\:p-12{
     padding: 3rem;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
   }
 
   .md\:px-6{
@@ -1502,6 +1570,14 @@ video {
 
   .md\:pt-24{
     padding-top: 6rem;
+  }
+
+  .md\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .md\:pt-16{
+    padding-top: 4rem;
   }
 
   .md\:text-2xl{
