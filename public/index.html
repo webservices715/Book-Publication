@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book-Publication</title>
     <link rel="stylesheet" href="output.css" />
+
+    <style>
+        /* Add custom styles here */
+        @keyframes zoomInOut {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+    
+        .bg-zoom {
+          animation: zoomInOut 10s infinite alternate ease-in-out;
+        }
+      </style>
+
   </head>
   <body>
-    <nav class="bg-zinc-800 text-white px-6 md:py-10 py-8">
+    <nav class="bg-zinc-800 shadow-lg text-white px-6 md:py-10 py-8">
       <div class="container mx-auto flex justify-between items-center">
         <div class="font-bold text-2xl">
           <a href="#" class="hover:text-yellow-500 transition duration-300"
@@ -31,50 +51,57 @@
     </nav>
 
     <header class="relative h-screen overflow-hidden">
-      <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 z-0 bg-zoom">
         <div
           class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('assets/image1.jpg')"
+          style="background-image: url('../assets/image1.jpg')"
           id="slide1"
         ></div>
         <div
           class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('https://static6.depositphotos.com/1000423/585/i/450/depositphotos_5850248-stock-photo-nature-landscape-with-clouds.jpg')"
+          style="background-image: url('../assets//image2.jpg')"
           id="slide2"
         ></div>
         <div
           class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg')"
+          style="background-image: url('../assets/image3.jpg')"
+          id="slide3"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+          style="background-image: url('../assets/image4.jpg')"
           id="slide3"
         ></div>
       </div>
-      <div class="relative z-10 flex flex-col items-start pt-24 px-16 h-full  text-white bg-zinc-800 bg-opacity-50">
+      <div
+        class="relative z-10 flex flex-col items-start pt-24 px-16 h-full text-white bg-zinc-800 bg-opacity-50"
+      >
         <div class="max-w-3xl">
           <div class="flex items-center gap-3">
             <span class="bg-yellow-500 w-8 h-[2.4px]"> </span>
-            <p class="text-xl md:text-2xl uppercase py-6 tracking-wider">
+            <p class="text-xl md:text-2xl uppercase py-6 tracking-wider font-Josefin">
               Aliya Books Publication 02
             </p>
           </div>
-          <h1 class="py-2 text-4xl md:text-6xl font-bold">
+          <h1 class="py-2 text-4xl md:text-6xl font-bold font-Josefin">
             Unique Solutions For Your Earning
           </h1>
-          <p class="py-4 text-lg md:text-lg text-gray-200 leading-relaxed">
-            Novel Book writing is a home-based job. You will receive books with an
-            instruction manual at your home. You just have to copy down text as
-            per instruction. No editing, no modification, no diagram. The project
-            will be dispatched by courier and the same way you have to send
-            completed work.
+          <p class="py-4 text-md md:text-md text-gray-100 leading-relaxed font-Montserrat">
+            Novel Book writing is a home-based job. You will receive books with
+            an instruction manual at your home. You just have to copy down text
+            as per instruction. No editing, no modification, no diagram. The
+            project will be dispatched by courier and the same way you have to
+            send completed work.
           </p>
-          
+
           <div class="mt-6 flex flex-col md:flex-row">
             <button
-              class="px-6 py-3 mr-0 md:mr-4 mb-4 md:mb-0 text-lg font-semibold text-black bg-white rounded-lg"
+              class="px-6 py-3 mr-0 md:mr-4 mb-4 md:mb-0 hover:bg-transparent transition ease-in duration-300 border hover:border-white hover:text-white text-lg font-semibold text-black bg-white rounded-lg font-Montserrat"
             >
               Get Started
             </button>
             <button
-              class="px-6 py-3 text-lg font-semibold text-white border border-white rounded-lg"
+              class="px-6 py-3 text-lg font-semibold text-white transition duration-300 ease-in border border-white hover:bg-white hover:text-black rounded-lg font-Montserrat"
             >
               Learn More →
             </button>
@@ -93,7 +120,7 @@
 
       function showSlide(index) {
         slides.forEach((slide, i) => {
-          slide.style.opacity = i === index ? '1' : '0';
+          slide.style.opacity = i === index ? "1" : "0";
         });
       }
 
