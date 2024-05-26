@@ -89,6 +89,32 @@
       .video-controls {
         display: none;
       }
+
+      .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+
+      .bg-opacity-70 {
+        background-color: rgba(
+          39,
+          39,
+          39,
+          0.7
+        ); /* Adjust the opacity as needed */
+      }
     </style>
   </head>
   <body>
@@ -183,8 +209,8 @@
 
     <!-- Why choose us -->
 
-    <div class="container mx-auto p-4 font-Josefin">
-      <section class="bg-white md:p-12 p-4 rounded-lg flex flex-col lg:flex-row items-center justify-center">
+    <div class="container mx-auto font-Josefin p-8">
+      <section class="bg-white md:p-12 p-4 rounded-lg flex flex-col lg:flex-row items-center shadow-2xl">
         <div class="lg:w-[40%] pr-4">
           <div class="flex items-center gap-3">
             <span class="bg-yellow-500 md:w-16 w-14 h-[2.4px]"></span>
@@ -231,37 +257,36 @@
             Get Started
           </button>
         </div>
-  
         <div class="lg:w-[60%] pl-4 mt-2 lg:mt-0">
-          <img class="md:w-full h-[540px] rounded-lg shadow-2xl" src="../assets/why_choose_us.jpg" alt="whychooseus" />
+          <img class="md:w-full h-[540px] rounded-lg " src="../assets/why_choose_us.jpg" alt="whychooseus" />
         </div>
-      </section>
-  
-      <section class="bg-white rounded-lg flex flex-col lg:flex-row items-center justify-center">
+      <div class="bg-white flex flex-col lg:flex-row items-center justify-center">
         <!-- <div class="lg:w-1/2 pl-4 mt-2 lg:mt-0">
-          <img class="md:w-full h-[490px]"
-            src="https://img.freepik.com/free-vector/flat-design-content-management-system-illustrated_23-2148816268.jpg"
-            alt="whychooseus" />
-        </div> -->
-        <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0 flex flex-col items-center">
+            <img class="md:w-full h-[490px]"
+              src="https://img.freepik.com/free-vector/flat-design-content-management-system-illustrated_23-2148816268.jpg"
+              alt="whychooseus" />
+          </div> -->
+        <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0 flex flex-col items-center" style="padding: 20px;">
           <ul class="list-none space-y-6">
-            <li class="flex flex-col md:flex-row items-center">
-              <img class="w-12 h-12 mr-4" src="../assets/achivement.png" alt="High Quality Content" />
+            <li class="flex flex-col justify-center items-center">
+              <img class="w-15 h-15 mr-4" src="../assets/achivement.png" alt="High Quality Content" />
               <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">High Quality
                 Content</span>
             </li>
-            <li class="flex flex-col md:flex-row items-center">
-              <img class="w-12 h-12 mr-4" src="../assets/task.png" alt="Well Organized Content" />
+            <li class="flex flex-col justify-center items-center">
+              <img class="w-15 h-15 mr-4" src="../assets/task.png" alt="Well Organized Content" />
               <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">Well Organized
                 Content</span>
             </li>
-            <li class="flex flex-col md:flex-row items-center">
-              <img class="w-12 h-12 mr-4" src="../assets/fastdelivery.png" alt="Deliver On Time" />
+            <li class="flex flex-col justify-center items-center">
+              <img class="w-15 h-15 mr-4" src="../assets/fastdelivery.png" alt="Deliver On Time" />
               <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">Deliver On Time</span>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
+
     </div>
   
     <div class="card-wrapper flex items-center overflow-x-scroll scroll-smooth cursor-grab"
@@ -283,23 +308,6 @@
           </div>
         </div>
       </div>
-      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
-              style="width: 100%; border-radius: 50%" />
-          </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
-          </div>
-        </div>
-      </div>
   
       <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
         style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
@@ -337,83 +345,77 @@
         </div>
       </div>
   
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
   
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <div
-      class="flex flex-col lg:flex-row items-center justify-center lg:space-x-2 px-2 py-16 md:py-28">
-      
-      <div class="w-full lg:w-1/1  text-white p-2 rounded-lg">
-        <div class="video-container relative animate__animated animate__bounceInLeft animate__slow">
-          <video id="videoPlayer" class="w-full h-auto" controls>
-            <source
-              src="https://assets.mixkit.co/videos/4829/4829-720.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <div class="play-button">
-            <button id="playButton" class="rounded-full p-4">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/0/375.png"
-                alt="Play Button"
-              />
-            </button>
-          </div>
-        </div>
+    <div class="flex flex-col items-center justify-center mt-12 px-2 py-16 md:py-28 relative animate__animated animate__backInLeft animate__slow">
+      <div class="video-container absolute px-8 inset-0 z-0">
+        <!-- <div class="absolute  inset-0 bg-zinc-800 bg-opacity-70"></div> -->
+        <video id="videoPlayer" class="w-full h-full object-cover" autoplay loop muted>
+          <source src="https://cdn.pixabay.com/video/2023/10/15/185096-874643413_large.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-
-      <div class="w-full lg:w-1/2 bg-zinc-800 text-white px-16 py-14 font-Josefin  animate__animated animate__backInUp animate__slower animate__delay-1s">
+    
+      <div class="w-full lg:w-1/2 text-white bg-zinc-800 bg-opacity-70 px-16 py-14 font-Josefin relative z-10 animate__animated animate__bounceInLeft animate__slower animate__delay-2s">
         <h2 class="text-2xl font-bold mb-6 text-center">Apply For Work</h2>
         <form>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             <div>
               <label for="name" class="block mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-              />
+              <input type="text" id="name" name="name" autocomplete="off" placeholder="Name" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
             </div>
             <div>
               <label for="email" class="block mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-              />
+              <input type="email" id="email" name="email" autocomplete="off" placeholder="Email" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
             </div>
           </div>
           <div class="mb-4">
             <label for="phone" class="block mb-2">Phone No.</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Phone Number"
-              class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-            />
+            <input type="text" id="phone" name="phone" autocomplete="off" placeholder="Phone Number" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
           </div>
           <div class="mb-4">
             <label for="content" class="block mb-2">Content</label>
-            <select
-              id="content"
-              name="content"
-              class="w-full p-2 bg-zinc-700 border-b-2 border-yellow-500 focus:outline-none"
-            >
+            <select id="content" name="content" class="w-full p-2 bg-zinc-700 border-b-2 border-yellow-500 focus:outline-none">
               <option>Project F5</option>
               <option>Project F6</option>
             </select>
           </div>
-          <button
-            type="submit"
-            class="w-full bg-yellow-500 text-zinc-800 mt-4 px-4 py-2  font-semibold rounded-lg hover:bg-yellow-600 transition-colors"
-          >
+          <button type="submit" class="w-full bg-yellow-500 text-zinc-800 mt-4 px-4 py-2 font-semibold rounded-lg hover:bg-yellow-600 transition-colors">
             Order Content
           </button>
         </form>
@@ -426,6 +428,10 @@
       </div>
     </div>
 
+    <div class="m-16">
+      <h1>Hello</h1>
+    </div>
+    
     <script>
       const slides = document.querySelectorAll('[id^="slide"]');
       const cardWrapper = document.querySelector(".card-wrapper");
