@@ -68,6 +68,27 @@
         opacity: 0;
         animation: linePopupcolor 3s ease-in-out forwards;
       }
+
+      .video-container {
+        position: relative;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+      .play-button img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .video-controls {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -163,15 +184,11 @@
     <!-- Why choose us -->
 
     <div class="container mx-auto p-4 font-Josefin">
-      <section
-        class="bg-white md:p-12 p-4 rounded-lg flex flex-col lg:flex-row items-center justify-center"
-      >
-        <div class="lg:w-1/2 pr-4">
+      <section class="bg-white md:p-12 p-4 rounded-lg flex flex-col lg:flex-row items-center justify-center">
+        <div class="lg:w-[40%] pr-4">
           <div class="flex items-center gap-3">
             <span class="bg-yellow-500 md:w-16 w-14 h-[2.4px]"></span>
-            <p
-              class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider text-gray-800 font-Josefin"
-            >
+            <p class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider text-gray-800 font-Josefin">
               Why Choose Us
             </p>
           </div>
@@ -180,229 +197,231 @@
           </h3>
           <ul class="list-none space-y-4">
             <li class="relative pl-8">
-              <span class="absolute left-0 top-0 text-yellow-500 font-bold"
-                >✔</span
-              >
+              <span class="absolute left-0 top-0 text-yellow-500 font-bold">✔</span>
               Good Pay Rates
             </li>
             <li class="relative pl-8">
-              <span class="absolute left-0 top-0 text-yellow-500 font-bold"
-                >✔</span
-              >
+              <span class="absolute left-0 top-0 text-yellow-500 font-bold">✔</span>
               Provide Quality Content
             </li>
             <li class="relative pl-8">
-              <span class="absolute left-0 top-0 text-yellow-500 font-bold"
-                >✔</span
-              >
+              <span class="absolute left-0 top-0 text-yellow-500 font-bold">✔</span>
               Enjoy Safe Payments
             </li>
             <li class="relative pl-8">
-              <span class="absolute left-0 top-0 text-yellow-500 font-bold"
-                >✔</span
-              >
+              <span class="absolute left-0 top-0 text-yellow-500 font-bold">✔</span>
               Increase Your Earning Power
             </li>
             <li class="relative pl-8">
-              <span class="absolute left-0 top-0 text-yellow-500 font-bold"
-                >✔</span
-              >
+              <span class="absolute left-0 top-0 text-yellow-500 font-bold">✔</span>
               Looking For More Opportunities
             </li>
           </ul>
           <div class="flex items-center mt-6">
-            <img
-              class="w-16 h-16 rounded-full mr-4 object-cover"
+            <img class="w-16 h-16 rounded-full mr-4 object-cover"
               src="https://m.foolcdn.com/media/dubs/images/original_imageshttpsg.foolcdn.comeditorialimag.width-880_wkaciBt.jpg"
-              alt="Riya Singh"
-            />
+              alt="Riya Singh" />
             <div>
               <p class="font-bold m-0">Jit Singh</p>
               <p class="text-gray-700 m-0">CEO | Founder</p>
             </div>
           </div>
           <button
-            class="mt-6 bg-black text-white py-4 px-8 rounded hover:bg-transparent border-2 hover:border-gray-800 transition ease-in duration-300 hover:text-black"
-          >
+            class="mt-6 bg-black text-white py-4 px-8 rounded hover:bg-transparent border-2 hover:border-gray-800 transition ease-in duration-300 hover:text-black">
             Get Started
           </button>
         </div>
-
-        <div class="lg:w-1/2 pl-4 mt-2 lg:mt-0">
-          <img
-            class="md:w-full h-[540px]"
-            src="https://i0.wp.com/www.trillionbits.com/wp-content/uploads/2022/09/business-support-services.png?fit=1000%2C1000&ssl=1"
-            alt="whychooseus"
-          />
+  
+        <div class="lg:w-[60%] pl-4 mt-2 lg:mt-0">
+          <img class="md:w-full h-[540px] rounded-lg shadow-2xl" src="../assets/why_choose_us.jpg" alt="whychooseus" />
         </div>
       </section>
-
-      <section
-        class="bg-white rounded-lg flex flex-col lg:flex-row items-center justify-center"
-      >
-      
-      <div class="lg:w-1/2 pl-4 mt-2 lg:mt-0">
-        <img
-          class="md:w-full h-[490px]"
-          src="https://img.freepik.com/free-vector/flat-design-content-management-system-illustrated_23-2148816268.jpg"
-          alt="whychooseus"
-        />
-      </div>
-
-        <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0">
+  
+      <section class="bg-white rounded-lg flex flex-col lg:flex-row items-center justify-center">
+        <!-- <div class="lg:w-1/2 pl-4 mt-2 lg:mt-0">
+          <img class="md:w-full h-[490px]"
+            src="https://img.freepik.com/free-vector/flat-design-content-management-system-illustrated_23-2148816268.jpg"
+            alt="whychooseus" />
+        </div> -->
+        <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0 flex flex-col items-center">
           <ul class="list-none space-y-6">
             <li class="flex flex-col md:flex-row items-center">
-              <img
-                class="w-12 h-12 mr-4"
-                src="../assets/writer.png"
-                alt="High Quality Content"
-              />
-              <span class="md:text-2xl text-xl font-semibold"
-                >High Quality Content</span
-              >
+              <img class="w-12 h-12 mr-4" src="../assets/achivement.png" alt="High Quality Content" />
+              <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">High Quality
+                Content</span>
             </li>
             <li class="flex flex-col md:flex-row items-center">
-              <img
-                class="w-12 h-12 mr-4"
-                src="../assets/writing.png"
-                alt="Well Organized Content"
-              />
-              <span class="md:text-2xl text-xl font-semibold"
-                >Well Organized Content</span
-              >
+              <img class="w-12 h-12 mr-4" src="../assets/task.png" alt="Well Organized Content" />
+              <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">Well Organized
+                Content</span>
             </li>
             <li class="flex flex-col md:flex-row items-center">
-              <img
-                class="w-12 h-12 mr-4"
-                src="../assets/on-time.png"
-                alt="Deliver On Time"
-              />
-              <span class="md:text-2xl text-xl font-semibold"
-                >Deliver On Time</span
-              >
+              <img class="w-12 h-12 mr-4" src="../assets/fastdelivery.png" alt="Deliver On Time" />
+              <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444;">Deliver On Time</span>
             </li>
           </ul>
         </div>
-
       </section>
     </div>
+  
+    <div class="card-wrapper flex items-center overflow-x-scroll scroll-smooth cursor-grab"
+      style="padding: 10px; -ms-overflow-style: none; scrollbar-width: none; gap: 13px; ">
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card text-white rounded-lg shadow-sm flex-shrink-0"
+        style="width: 356px; height: 200px; background-color: #202020; padding: 1.5rem;user-select: none;">
+        <div class="content italic">
+          "Their work procedure, working schedule all is good. Anyone who wants
+          to part time and also love writing, then this is the best place."
+        </div>
+        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
+          <div class="image w-4" style="width: 50px">
+            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg" alt="userImage"
+              style="width: 100%; border-radius: 50%" />
+          </div>
+          <div class="user-section">
+            <p>Amisha Khan</p>
+            <p style="color: #f7b000">Client</p>
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+
 
     <div
-      class="card-wrapper flex items-center gap-10 overflow-x-scroll scroll-smooth cursor-grab"
-      style="padding: 10px; -ms-overflow-style: none; scrollbar-width: none"
-    >
-      <div
-        class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; background-color: #202020; padding: 1.5rem"
-      >
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img
-              src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg"
-              alt="userImage"
-              style="width: 100%; border-radius: 50%"
+      class="flex flex-col lg:flex-row items-center justify-center lg:space-x-2 px-2 py-16 md:py-28">
+      
+      <div class="w-full lg:w-1/1  text-white p-2 rounded-lg">
+        <div class="video-container relative animate__animated animate__bounceInLeft animate__slow">
+          <video id="videoPlayer" class="w-full h-auto" controls>
+            <source
+              src="https://assets.mixkit.co/videos/4829/4829-720.mp4"
+              type="video/mp4"
             />
-          </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
+            Your browser does not support the video tag.
+          </video>
+          <div class="play-button">
+            <button id="playButton" class="rounded-full p-4">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/0/375.png"
+                alt="Play Button"
+              />
+            </button>
           </div>
         </div>
       </div>
 
-      <div
-        class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; background-color: #202020; padding: 1.5rem"
-      >
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img
-              src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg"
-              alt="userImage"
-              style="width: 100%; border-radius: 50%"
+      <div class="w-full lg:w-1/2 bg-zinc-800 text-white px-16 py-14 font-Josefin  animate__animated animate__backInUp animate__slower animate__delay-1s">
+        <h2 class="text-2xl font-bold mb-6 text-center">Apply For Work</h2>
+        <form>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="name" class="block mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
+              />
+            </div>
+            <div>
+              <label for="email" class="block mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
+              />
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block mb-2">Phone No.</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
             />
           </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
+          <div class="mb-4">
+            <label for="content" class="block mb-2">Content</label>
+            <select
+              id="content"
+              name="content"
+              class="w-full p-2 bg-zinc-700 border-b-2 border-yellow-500 focus:outline-none"
+            >
+              <option>Project F5</option>
+              <option>Project F6</option>
+            </select>
           </div>
-        </div>
-      </div>
-
-      <div
-        class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; background-color: #202020; padding: 1.5rem"
-      >
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img
-              src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg"
-              alt="userImage"
-              style="width: 100%; border-radius: 50%"
-            />
-          </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; background-color: #202020; padding: 1.5rem"
-      >
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img
-              src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg"
-              alt="userImage"
-              style="width: 100%; border-radius: 50%"
-            />
-          </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="card text-white rounded-lg shadow-sm flex-shrink-0"
-        style="width: 356px; background-color: #202020; padding: 1.5rem"
-      >
-        <div class="content italic">
-          "Their work procedure, working schedule all is good. Anyone who wants
-          to part time and also love writing, then this is the best place."
-        </div>
-        <div class="user flex items-center" style="gap: 10px; padding: 10px 0">
-          <div class="image w-4" style="width: 50px">
-            <img
-              src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/F-23.jpg"
-              alt="userImage"
-              style="width: 100%; border-radius: 50%"
-            />
-          </div>
-          <div class="user-section">
-            <p>Amisha Khan</p>
-            <p style="color: #f7b000">Client</p>
-          </div>
+          <button
+            type="submit"
+            class="w-full bg-yellow-500 text-zinc-800 mt-4 px-4 py-2  font-semibold rounded-lg hover:bg-yellow-600 transition-colors"
+          >
+            Order Content
+          </button>
+        </form>
+        <div class="mt-8 text-center">
+          <p>
+            Get in Touch with us!
+            <a href="#" class="text-yellow-500 underline">Click Here</a>
+          </p>
         </div>
       </div>
     </div>
@@ -474,6 +493,32 @@
           learnMoreButton.classList.add("animate__flipInX");
         }
         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+      });
+
+      const videoPlayer = document.getElementById("videoPlayer");
+      const playButton = document.getElementById("playButton");
+      const videoControls = document.querySelector(".video-controls");
+
+      playButton.addEventListener("click", () => {
+        videoPlayer.play();
+        playButton.style.display = "none"; // Hide the play button
+        videoControls.style.display = "block"; // Show video controls
+      });
+
+      // You can add more functionality for pause, mute, etc. to the videoControls if needed
+
+      // Optional: Hide the video controls initially and only show them when the video is playing
+      videoPlayer.addEventListener("play", () => {
+        videoControls.style.display = "block";
+      });
+
+      videoPlayer.addEventListener("pause", () => {
+        videoControls.style.display = "none";
+      });
+
+      videoPlayer.addEventListener("ended", () => {
+        playButton.style.display = "block";
+        videoControls.style.display = "none";
       });
     </script>
   </body>
