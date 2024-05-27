@@ -110,6 +110,11 @@
       .bg-opacity-70 {
         background-color: rgba(39, 39, 39, 0.7);
       }
+
+      /* Style scrollbar for webkit browsers */
+      body::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar */
+      }
     </style>
   </head>
   <body class="bg-gray-100">
@@ -909,12 +914,8 @@
         </div>
         <div class="p-10 text-center">
           <div class="flex items-center justify-center">
-            <div>
-              <p
-                class="absolute md:left-[21.6rem] left-14 text-lg font-bold mt-3 text-gray-800"
-              >
-                ₹
-              </p>
+            <div class="flex">
+              <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
               <h1 class="text-[5rem] font-bold text-gray-800">5000</h1>
             </div>
             <span class="text-yellow-400">Payout</span>
@@ -959,12 +960,8 @@
         </div>
         <div class="p-10 text-center">
           <div class="flex items-center justify-center">
-            <div>
-              <p
-                class="absolute md:right-[39.1rem] right-[20.8rem] text-lg font-bold mt-3 text-yellow-400"
-              >
-                ₹
-              </p>
+            <div class="flex">
+              <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
               <h1 class="text-[5rem] font-bold text-yellow-400">10000</h1>
             </div>
             <span class="text-white">Payout</span>
@@ -1017,12 +1014,11 @@
         class="bg-gray-100 md:py-8 py-8 flex flex-col justify-around font-Josefin md:px-24 px-3 shadow-xl"
       >
         <div class="flex items-center justify-center">
-          <div>
-            <p
+          <div class="flex">
+            <!-- <p
               class="absolute md:left-[39.7rem] left-14 text-lg font-bold mt-3 text-zinc-700"
-            >
-              ₹
-            </p>
+            > -->
+            <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
             <h1 class="text-[4rem] font-bold text-zinc-700">17000</h1>
           </div>
           <span class="text-yellow-400 mt-8">Payout</span>
@@ -1064,7 +1060,7 @@
       class="flex flex-wrap justify-center gap-16 mt-12 max-w-7xl mx-auto font-Josefin"
     >
       <div
-        class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2  bg-gray-100 shadow-xl overflow-hidden"
+        class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2 bg-gray-100 shadow-xl overflow-hidden"
       >
         <div class="bg-zinc-800 text-white p-10 text-center">
           <h2 class="text-3xl font-bold text-yellow-400">PROJECT NAME - F25</h2>
@@ -1072,12 +1068,8 @@
         </div>
         <div class="p-10 text-center">
           <div class="flex items-center justify-center">
-            <div>
-              <p
-                class="absolute md:left-[20rem] left-10 text-lg font-bold mt-3 text-gray-800"
-              >
-                ₹
-              </p>
+            <div class="flex">
+              <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
               <h1 class="text-[5rem] font-bold text-gray-800">25000</h1>
             </div>
             <span class="text-yellow-400">Payout</span>
@@ -1121,12 +1113,8 @@
         </div>
         <div class="p-10 text-center">
           <div class="flex items-center justify-center">
-            <div>
-              <p
-                class="absolute md:right-[37.4rem] right-[19.2rem] text-lg font-bold mt-3 text-yellow-400"
-              >
-                ₹
-              </p>
+            <div class="flex">
+              <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
               <h1 class="text-[5rem] font-bold text-yellow-400">9000</h1>
             </div>
             <span class="text-white">Payout</span>
@@ -1174,12 +1162,8 @@
         </div>
         <div class="p-10 text-center">
           <div class="flex items-center justify-center">
-            <div>
-              <p
-                class="absolute md:left-[38rem] left-10 text-lg font-bold mt-3 text-gray-800"
-              >
-                ₹
-              </p>
+            <div class="flex">
+              <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
               <h1 class="text-[5rem] font-bold text-gray-800">10000</h1>
             </div>
             <span class="text-yellow-400">Payout</span>
@@ -1212,53 +1196,80 @@
       </div>
     </div>
 
-    
     <div class="bg-zinc-100 dark:bg-zinc-900 my-12">
       <div class="relative">
-          <img src="../assets/image1.jpg" alt="Promotion Image" class="w-full md:h-[550px] h-[580px] object-cover" />
-          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center gap-16 p-4 md:p-8 font-Josefin tracking-widest">
-              <div class="flex flex-col w-full md:w-[58%] ml-2 md:ml-12 mb-2 mt-12 md:mb-0">
-                  <span class="text-yellow-500 text-lg font-semibold flex items-center gap-4 md:gap-5">
-                      <span class="bg-yellow-500 w-10 md:w-20 h-[2.4px]"></span>
-                      PROMOTION
-                  </span>
-                  <h1 class="text-white text-3xl md:text-5xl font-bold leading-snug mt-4 md:mt-5">
-                      You Need Cheap Content Writing For Your Business? Contenta Is The Solution!
-                  </h1>
-              </div>
-              <div class="mt-6 flex md:flex-row flex-col items-start text-yellow-500  md:w-[35%] justify-start md:justify-end mx-2">
-                  <img src="https://placehold.co/50x50" alt="Call Icon" class="w-8 h-8 md:w-12 md:h-12" />
-                  <div class="md:ml-4">
-                      <span class="text-white text-lg md:text-2xl font-bold">Call For Business</span>
-                      <span class="text-3xl md:text-4xl font-bold">+91-7394998880</span>
-                  </div>
-              </div>
+        <img
+          src="../assets/image1.jpg"
+          alt="Promotion Image"
+          class="w-full md:h-[550px] h-[580px] object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center gap-16 p-4 md:p-8 font-Josefin tracking-widest"
+        >
+          <div
+            class="flex flex-col w-full md:w-[58%] ml-2 md:ml-12 mb-2 mt-12 md:mb-0"
+          >
+            <span
+              class="text-yellow-500 text-lg font-semibold flex items-center gap-4 md:gap-5"
+            >
+              <span class="bg-yellow-500 w-10 md:w-20 h-[2.4px]"></span>
+              PROMOTION
+            </span>
+            <h1
+              class="text-white text-3xl md:text-5xl font-bold leading-snug mt-4 md:mt-5"
+            >
+              You Need Cheap Content Writing For Your Business? Contenta Is The
+              Solution!
+            </h1>
           </div>
+          <div
+            class="mt-6 flex md:flex-row flex-col items-start text-yellow-500 md:w-[35%] justify-start md:justify-end mx-2"
+          >
+            <img
+              src="https://placehold.co/50x50"
+              alt="Call Icon"
+              class="w-8 h-8 md:w-12 md:h-12"
+            />
+            <div class="md:ml-4">
+              <span class="text-white text-lg md:text-2xl font-bold"
+                >Call For Business</span
+              >
+              <span class="text-3xl md:text-4xl font-bold">+91-7394998880</span>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <!-- Statistics Section -->
-  <div class="w-full h-full flex justify-center font-Josefin">
-    <div class="bg-yellow-400 relative bottom-36 md:bottom-28 text-white p-6 w-full md:w-[60%] h-auto md:h-40 flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0">
-        <div class="text-center">
-            <p id="projects" class="text-5xl font-bold">49k</p>
-            <p class="text-base md:text-lg text-zinc-800 font-bold">Project Done</p>
-        </div>
-        <div class="text-center">
-            <p id="countries" class="text-5xl font-bold">34+</p>
-            <p class="text-base md:text-lg text-zinc-800 font-bold">Country</p>
-        </div>
-        <div class="text-center">
-            <p id="clients" class="text-5xl font-bold">12k</p>
-            <p class="text-base md:text-lg text-zinc-800 font-bold">Happy Client</p>
-        </div>
-        <div class="text-center">
-            <p id="team" class="text-5xl font-bold">86+</p>
-            <p class="text-base md:text-lg text-zinc-800 font-bold">Expert Team</p>
-        </div>
     </div>
-</div>
 
+    <!-- Statistics Section -->
+    <div class="w-full h-full flex justify-center font-Josefin">
+      <div
+        class="bg-yellow-400 relative bottom-36 md:bottom-28 text-white p-6 w-full md:w-[60%] h-auto md:h-40 flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0"
+      >
+        <div class="text-center">
+          <p id="counter" class="text-5xl font-bold">49k</p>
+          <p class="text-base md:text-lg text-zinc-800 font-bold">
+            Project Done
+          </p>
+        </div>
+        <div class="text-center">
+          <p id="countries" class="text-5xl font-bold">34+</p>
+          <p class="text-base md:text-lg text-zinc-800 font-bold">Country</p>
+        </div>
+        <div class="text-center">
+          <p id="clients" class="text-5xl font-bold">12k</p>
+          <p class="text-base md:text-lg text-zinc-800 font-bold">
+            Happy Client
+          </p>
+        </div>
+        <div class="text-center">
+          <p id="team" class="text-5xl font-bold">86+</p>
+          <p class="text-base md:text-lg text-zinc-800 font-bold">
+            Expert Team
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="h-[500px]"></div>
 
@@ -1356,41 +1367,6 @@
         playButton.style.display = "block";
         videoControls.style.display = "none";
       });
-
-
-      // Function to animate counting effect
-function animateCount(element, target, duration) {
-  let start = 0;
-  const step = target / Math.floor(duration / 16); // Assuming 60 FPS
-
-  function updateCount() {
-    start += step;
-    element.textContent = Math.floor(start);
-    if (start < target) {
-      requestAnimationFrame(updateCount);
-    } else {
-      element.textContent = target;
-    }
-  }
-
-  updateCount();
-}
-
-// Trigger counting animations on page load
-document.addEventListener("DOMContentLoaded", () => {
-  const projectsElement = document.getElementById("projects");
-  const countriesElement = document.getElementById("countries");
-  const clientsElement = document.getElementById("clients");
-  const teamElement = document.getElementById("team");
-
-  animateCount(projectsElement, 49000, 2000); // 49000 is the target number, 2000 is duration in milliseconds
-  animateCount(countriesElement, 34, 1000); // 34 is the target number, 1000 is duration in milliseconds
-  animateCount(clientsElement, 12000, 1500); // 12000 is the target number, 1500 is duration in milliseconds
-  animateCount(teamElement, 86, 1200); // 86 is the target number, 1200 is duration in milliseconds
-});
-
-
-      
     </script>
   </body>
 </html>
