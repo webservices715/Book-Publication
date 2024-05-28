@@ -115,6 +115,8 @@
       body::-webkit-scrollbar {
         display: none; /* Hide the scrollbar */
       }
+
+    
     </style>
   </head>
   <body class="bg-gray-100">
@@ -142,71 +144,58 @@
 
     <header class="relative h-screen overflow-hidden">
       <div class="absolute inset-0 z-0 bg-zoom">
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('../assets/image1.jpg')"
-          id="slide1"
-        ></div>
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('../assets/image2.jpg')"
-          id="slide2"
-        ></div>
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('../assets/image3.jpg')"
-          id="slide3"
-        ></div>
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
-          style="background-image: url('../assets/image4.jpg')"
-          id="slide4"
-        ></div>
+          <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+              style="background-image: url('../assets/image1.jpg')" id="slide1"></div>
+          <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+              style="background-image: url('../assets/image2.jpg')" id="slide2"></div>
+          <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+              style="background-image: url('../assets/image3.jpg')" id="slide3"></div>
+          <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000"
+              style="background-image: url('../assets/image4.jpg')" id="slide4"></div>
       </div>
       <div
-        class="relative z-10 flex flex-col items-start pt-12 md:pt-16 px-6 md:px-16 h-full text-white bg-zinc-800 bg-opacity-50"
-      >
-        <div class="max-w-3xl">
-          <div class="flex items-center gap-3">
-            <span class="bg-yellow-500 w-8 h-[2.4px] animated-line"></span>
-            <p
-              class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider font-Josefin animated-text"
-            >
-              Aliya Books Publication 02
-            </p>
+          class="relative z-10 flex flex-col items-start pt-12 md:pt-16 px-6 md:px-16 h-full text-white bg-zinc-800 bg-opacity-50">
+          <div class="max-w-3xl">
+              <div class="flex items-center gap-3">
+                  <span class="bg-yellow-500 w-8 h-[2.4px] animated-line"></span>
+                  <p
+                      class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider font-Josefin animated-text">
+                      Aliya Books Publication 02
+                  </p>
+              </div>
+              <h1 class="py-2 text-4xl md:text-6xl font-bold font-Josefin animated-text">
+                  Unique Solutions For Your Earning
+              </h1>
+              <p
+                  class="py-2 md:py-4 text-sm md:text-lg text-gray-100 leading-relaxed font-Montserrat animated-text">
+                  Novel Book writing is a home-based job. You will receive books with an instruction manual at your
+                  home. You just have to copy down text as per instruction. No editing, no modification, no diagram.
+                  The project will be dispatched by courier and the same way you have to send completed work.
+              </p>
+              <div class="mt-4 md:mt-6 flex flex-col md:flex-row">
+                  <button
+                      class="animate__animated animate__flipInX px-4 md:px-6 py-2 md:py-3 mr-0 md:mr-4 mb-2 md:mb-0 hover:bg-transparent transition ease-in duration-300 border hover:border-white hover:text-white text-lg md:text-xl font-semibold text-black bg-white rounded-sm font-Montserrat">
+                      Get Started
+                  </button>
+                  <button
+                      class="animate__animated animate__flipInX animate__delay-1s px-4 md:px-6 py-2 md:py-3 text-lg md:text-xl font-semibold text-white border border-white hover:bg-white transition ease-in duration-300 hover:text-black rounded-sm font-Montserrat">
+                      Learn More →
+                  </button>
+              </div>
           </div>
-          <h1
-            class="py-2 text-4xl md:text-6xl font-bold font-Josefin animated-text"
-          >
-            Unique Solutions For Your Earning
-          </h1>
-          <p
-            class="py-2 md:py-4 text-sm md:text-lg text-gray-100 leading-relaxed font-Montserrat animated-text"
-          >
-            Novel Book writing is a home-based job. You will receive books with
-            an instruction manual at your home. You just have to copy down text
-            as per instruction. No editing, no modification, no diagram. The
-            project will be dispatched by courier and the same way you have to
-            send completed work.
-          </p>
-          <div class="mt-4 md:mt-6 flex flex-col md:flex-row">
-            <button
-              id="getStartedButton"
-              class="animate__animated animate__flipInX px-4 md:px-6 py-2 md:py-3 mr-0 md:mr-4 mb-2 md:mb-0 hover:bg-transparent transition ease-in duration-300 border hover:border-white hover:text-white text-lg md:text-xl font-semibold text-black bg-white rounded-sm font-Montserrat"
-            >
-              Get Started
-            </button>
-            <button
-              id="learnMoreButton"
-              class="animate__animated animate__flipInX animate__delay-1s px-4 md:px-6 py-2 md:py-3 text-lg md:text-xl font-semibold text-white border border-white hover:bg-white transition ease-in duration-300 hover:text-black rounded-sm font-Montserrat"
-            >
-              Learn More →
-            </button>
-          </div>
-        </div>
       </div>
-    </header>
-
+      <!-- <div class="social-icons fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col items-center gap-3 z-10">
+          <a href="#" class="text-white px-3 py-1 rounded-full">
+            <img src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png" alt="" class="w-8 h-8">
+          </a>
+          <a href="#" class="text-white px-3 py-1 rounded-full">
+            <img src="https://freelogopng.com/images/all_img/1690643591twitter-x-logo-png.png" alt="" class="w-8 h-8'>
+          </a>
+          <a href="#" class="text-white px-3 py-2 rounded-full ">
+            <img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="" class="w-8 h-8">
+          </a>
+      </div> -->
+  </header>
     <div class="container mx-auto font-Josefin md:p-8 p-4">
       <section
         class="bg-white md:p-12 p-4 rounded-sm flex flex-col lg:flex-row items-center shadow-lg"
@@ -633,6 +622,13 @@
             </div>
           </div>
         </div>
+        <div class="md:flex justify-start mt-8 hidden">
+          <button
+            class="mt-6 bg-zinc-800 text-white py-4 px-10 text-xl font-bold transition duration-300 hover:bg-yellow-400 hover:-translate-y-1"
+          >
+            More About Us
+          </button>
+        </div>
       </section>
       <section class="w-full lg:w-2/5 relative mx-auto mt-12 lg:my-28">
         <div class="w-full flex relative justify-center lg:justify-start">
@@ -682,18 +678,28 @@
       ></div>
       <div class="absolute inset-0 bg-black bg-opacity-75"></div>
       <!-- Overlay -->
-      <div
-        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-Montserrat"
-      >
-        <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center font-Josefin"
+        >
           <div class="text-center gap-6 md:flex md:items-center mb-12 md:mb-0">
-            <h2 class="text-6xl font-bold text-yellow-400">987+</h2>
+            <h2
+              class="text-6xl font-bold text-yellow-400 counter-number"
+              data-number="987"
+            >
+              0+
+            </h2>
             <p class="text-xl font-semibold">
               Our Happy Clients All Over India
             </p>
           </div>
           <div class="text-center gap-6 md:flex md:items-center">
-            <h2 class="text-6xl font-bold text-yellow-400">1,200+</h2>
+            <h2
+              class="text-6xl font-bold text-yellow-400 counter-number"
+              data-number="1200"
+            >
+              0+
+            </h2>
             <p class="text-xl font-semibold">
               Our Happy Clients All Over World
             </p>
@@ -723,7 +729,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/seo.png"
               alt="SEO Content Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -748,7 +754,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/copy-writing.png"
               alt="Script Writing Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -774,7 +780,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/writer.png"
               alt="Website Content Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -807,7 +813,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/writing-tech.png"
               alt="SEO Content Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -833,7 +839,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/post.png"
               alt="Script Writing Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -861,7 +867,7 @@
         <div class="bg-white p-6 rounded-sm shadow-lg">
           <div class="flex items-center mb-4">
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/online.png"
               alt="Website Content Icon"
               class="h-12 w-12 text-yellow-500"
             />
@@ -1201,10 +1207,10 @@
         <img
           src="../assets/image1.jpg"
           alt="Promotion Image"
-          class="w-full md:h-[550px] h-[580px] object-cover"
+          class="w-full md:h-[550px] h-[600px] object-cover"
         />
         <div
-          class="absolute inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center gap-16 p-4 md:p-8 font-Josefin tracking-widest"
+          class="absolute inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center gap-2 md:gap-16 p-4 md:p-8 font-Josefin tracking-widest"
         >
           <div
             class="flex flex-col w-full md:w-[58%] ml-2 md:ml-12 mb-2 mt-12 md:mb-0"
@@ -1226,7 +1232,7 @@
             class="mt-6 flex md:flex-row flex-col items-start text-yellow-500 md:w-[35%] justify-start md:justify-end mx-2"
           >
             <img
-              src="https://placehold.co/50x50"
+              src="../assets/telephone.png"
               alt="Call Icon"
               class="w-8 h-8 md:w-12 md:h-12"
             />
@@ -1244,26 +1250,50 @@
     <!-- Statistics Section -->
     <div class="w-full h-full flex justify-center font-Josefin">
       <div
-        class="bg-yellow-400 relative bottom-36 md:bottom-28 text-white p-6 w-full md:w-[60%] h-auto md:h-40 flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0"
+        class="bg-yellow-400 relative bottom-36 md:bottom-28 text-white p-6 w-full md:w-[70%] h-auto md:h-40 flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0"
       >
         <div class="text-center">
-          <p id="counter" class="text-5xl font-bold">49k</p>
+          <p
+            id="counter"
+            class="text-5xl font-bold counter-number"
+            data-number="49"
+          >
+            0
+          </p>
           <p class="text-base md:text-lg text-zinc-800 font-bold">
             Project Done
           </p>
         </div>
         <div class="text-center">
-          <p id="countries" class="text-5xl font-bold">34+</p>
+          <p
+            id="countries"
+            class="text-5xl font-bold counter-number"
+            data-number="34"
+          >
+            0+
+          </p>
           <p class="text-base md:text-lg text-zinc-800 font-bold">Country</p>
         </div>
         <div class="text-center">
-          <p id="clients" class="text-5xl font-bold">12k</p>
+          <p
+            id="clients"
+            class="text-5xl font-bold counter-number"
+            data-number="12000n"
+          >
+            0
+          </p>
           <p class="text-base md:text-lg text-zinc-800 font-bold">
             Happy Client
           </p>
         </div>
         <div class="text-center">
-          <p id="team" class="text-5xl font-bold">86+</p>
+          <p
+            id="team"
+            class="text-5xl font-bold counter-number"
+            data-number="86"
+          >
+            0+
+          </p>
           <p class="text-base md:text-lg text-zinc-800 font-bold">
             Expert Team
           </p>
@@ -1271,13 +1301,336 @@
       </div>
     </div>
 
-    <div class="h-[500px]"></div>
+    <div class="flex flex-wrap justify-center p-4 font-Montserrat">
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white shadow-xl rounded-md overflow-hidden">
+          <img
+            src="../assets/image3.jpg"
+            alt="Person writing"
+            class="w-full h-64 object-cover"
+          />
+          <div class="py-4 px-6 bg-yellow-400 text-xl text-white italic">
+            <p class="mb-2 leading-loose">
+              I worked with them, and write for them. Their coordination and
+              everything was good. I also get payment on time for the pages I
+              wrote.
+            </p>
+            <p class="font-bold">Kavita</p>
+            <p>Writer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-2/3 p-4">
+        <div class="space-y-4">
+          <div class="bg-gray-100 italic p-6 shadow-lg">
+            <h3 class="font-bold mb-2 text-zinc-500">How do we get paid?</h3>
+            <p class="text-zinc-400">
+              When the project is done, you write the required content and do
+              the changes if required then you get paid full amount.
+            </p>
+          </div>
+
+          <div class="bg-zinc-800 text-white italic p-6 shadow-lg">
+            <h3 class="font-bold mb-2">
+              Who will Bear Paper, Writing Material, Courier, etc charges?
+            </h3>
+            <p>
+              When you get the project, initially all the material and charges
+              are borne by you but at the type of payment we compensate
+              accordingly.
+            </p>
+          </div>
+
+          <div class="bg-gray-100 italic p-6 shadow-lg">
+            <h3 class="font-bold mb-2 text-zinc-500">How to Apply?</h3>
+            <p class="text-zinc-400">
+              If you want any project, want to write simply you can contact us
+              via phone or also send us an email. Then we connect with you & if
+              you are comfortable then assign the project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-28 font-Josefin px-4">
+      <div class="flex justify-center items-center gap-5">
+        <span class="bg-yellow-500 w-20 h-[2.4px]"></span>
+
+        <h6 class="heading1 text-zinc-700 tracking-widest md:text-md text-sm font-bold">
+          LATEST NEWS
+        </h6>
+      </div>
+
+      <h3 class="heading md:my-4 my-3 text-zinc-700 md:text-5xl text-3xl font-bold">We Have Latest News For You</h3>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-8 p-4">
+      <!-- Card 1 -->
+      <div
+        class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300"
+      >
+        <img
+          class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+          src="../assets/image1.jpg"
+          alt="Best Content Writing Courses Online"
+        />
+        <div class="px-6 py-4">
+          <div
+            class="font-bold text-xl mb-2 text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 transition-all duration-300"
+          >
+            Best Content Writing Courses Online (Free & Paid)
+          </div>
+          <p class="text-zinc-700 dark:text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a
+            href="#"
+            class="text-yellow-500 dark:text-yellow-400 font-bold hover:text-yellow-600 dark:hover:text-yellow-500 transition-all duration-300"
+            >Read More »</a
+          >
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold"
+            >NEWS</span
+          >
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-200 dark:border-zinc-700">
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >November 14, 2022</span
+          >
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >• No Comments</span
+          >
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="max-w-md rounded-sm  overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300"
+      >
+        <img
+          class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+          src="../assets/image4.jpg"
+          alt="4 Reasons Why I Chose Content Writing Over Copywriting"
+        />
+        <div class="px-6 py-4">
+          <div
+            class="font-bold text-xl mb-2 text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 transition-all duration-300"
+          >
+            4 Reasons Why I Chose Content Writing Over Copywriting
+          </div>
+          <p class="text-zinc-700 dark:text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a
+            href="#"
+            class="text-yellow-500 dark:text-yellow-400 font-bold hover:text-yellow-600 dark:hover:text-yellow-500 transition-all duration-300"
+            >Read More »</a
+          >
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold"
+            >UNCATEGORIZED</span
+          >
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-200 dark:border-zinc-700">
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >November 14, 2022</span
+          >
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >• No Comments</span
+          >
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="max-w-md rounded-sm overflow-hidden shadow-xl  bg-zinc-800 transition-all duration-300"
+      >
+        <img
+          class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+          src="../assets/image2.jpg"
+          alt="Content Marketing: Blogging For Business By LinkedIn"
+        />
+        <div class="px-6 py-4">
+          <div
+            class="font-bold text-xl mb-2 text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 transition-all duration-300"
+          >
+            Content Marketing: Blogging For Business By LinkedIn
+          </div>
+          <p class="text-zinc-700 dark:text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a
+            href="#"
+            class="text-yellow-500 dark:text-yellow-400 font-bold hover:text-yellow-600 dark:hover:text-yellow-500 transition-all duration-300"
+            >Read More »</a
+          >
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold"
+            >UNCATEGORIZED</span
+          >
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-200 dark:border-zinc-700">
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >November 14, 2022</span
+          >
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >• No Comments</span
+          >
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="max-w-md rounded-sm  overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300"
+      >
+        <img
+          class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+          src="../assets/image3.jpg"
+          alt="Witryna Www Nie Znaleziona"
+        />
+        <div class="px-6 py-4">
+          <div
+            class="font-bold text-xl mb-2 text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-400 transition-all duration-300"
+          >
+            Witryna Www Nie Znaleziona
+          </div>
+          <p class="text-zinc-700 dark:text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a
+            href="#"
+            class="text-yellow-500 dark:text-yellow-400 font-bold hover:text-yellow-600 dark:hover:text-yellow-500 transition-all duration-300"
+            >Read More »</a
+          >
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold"
+            >UNCATEGORIZED</span
+          >
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-200 dark:border-zinc-700">
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >November 14, 2022</span
+          >
+          <span class="text-zinc-600 dark:text-zinc-400 text-sm"
+            >• No Comments</span
+          >
+        </div>
+      </div>
+    </div>
+
+
+   
+    <!-- Footer -->
+    <footer class="bg-black text-white md:px-10 px-4 md:py-28 py-12 font-Montserrat">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Column 1: Company Information -->
+                <div>
+                    <div>
+                        <a href="#">
+                            <img src="../assets/booklogo.jpg" class="w-3/5" alt="Company Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="text-gray-300 mt-4 text-lg leading-relaxed">Novel Book writing is a home-based job. You will receive books
+                            with an instruction manual at your home.</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-white mb-5">Quick Links</h4>
+                    <div class="border-t-2 border-yellow-500 mb-4"></div>
+                    <ul class="space-y-2">
+                        <li><a class="text-gray-300 hover:underline" href="/">Home</a></li>
+                        <li><a class="text-gray-300 hover:underline" href="/?page_id=129">About</a></li>
+                        <li><a class="text-gray-300 hover:underline" href="https://aliyabookspublication02.in/?page_id=123">Services</a></li>
+                        <li><a class="text-gray-300 hover:underline" href="https://aliyabookspublication02.in/blog/">Blog</a></li>
+                        <li><a class="text-gray-300 hover:underline" href="/?page_id=108">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Us -->
+                <div>
+                    <h4 class="text-white mb-5">Contact Us</h4>
+                    <div class="border-t-2 border-yellow-500 mb-4"></div>
+                    <p class="text-gray-300 mb-4">Feel free to contact us through any of the means below:</p>
+                    <div class="flex items-center mb-4">
+                        <a href="tel:9680300193">
+                            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-22-1.png" class="w-8 h-8 mr-3" alt="Phone">
+                        </a>
+                        <div>
+                            <h5 class="text-white"><a href="tel:9680300193">Phone Number</a></h5>
+                            <p class="text-yellow-400 ">+91-8076038808</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <a href="mailto:Contact@aliyabookspublication02.in">
+                            <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png" class="w-8 h-8 mr-3" alt="Email">
+                        </a>
+                        <div>
+                          <a href="mailto:Contact@aliyabookspublication02.in">
+                            <h5 class="text-white">Email Address</h5>
+                            <p class="text-yellow-400 ">@gmail.com</p>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <a href="https://wa.me/918076038808">
+                            <img src="https://cdn-icons-png.flaticon.com/512/311/311337.png" class="w-8 h-8 mr-3" alt="WhatsApp">
+                        </a>
+                        <div>
+                          <a href="https://wa.me/918076038808">
+                            <h5 class="text-white">WhatsApp</h5>
+                            <p class="text-yellow-400 ">+918076038808</p>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png" class="w-8 h-8 mr-3" alt="Address">
+                        <div>
+                            <h5 class="text-white">Address</h5>
+                            <p class="text-yellow-400 ">29, Sector 18, Gurugram, Haryana 122008, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4: Location -->
+                <div>
+                    <h4 class="text-white mb-5">Location</h4>
+                    <div class="border-t-2 border-yellow-500 mb-4"></div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.6414848284794!2d77.0576929745979!3d28.490341690525128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d190ba42f6395%3A0x568bbf711f345a7d!2s29%2C%20Sector%2018%2C%20Gurugram%2C%20Haryana%20122008!5e0!3m2!1sen!2sin!4v1716624909210!5m2!1sen!2sin"
+                            class="w-full h-72" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-2 border-yellow-500 my-8"></div>
+            <div class="text-center text-zinc-500">
+                <h6>Copyright 2024 © All Right Reserved | Designed by Myself</h6>
+            </div>
+        </div>
+    </footer>
+    
 
     <script>
       const slides = document.querySelectorAll('[id^="slide"]');
       const cardWrapper = document.querySelector(".card-wrapper");
-      const getStartedButton = document.getElementById("getStartedButton");
-      const learnMoreButton = document.getElementById("learnMoreButton");
 
       let currentSlide = 0;
       let isDown = false;
@@ -1324,48 +1677,58 @@
         cardWrapper.scrollLeft = scrollLeft - walk;
       });
 
-      window.addEventListener("scroll", () => {
-        let st = window.pageYOffset || document.documentElement.scrollTop;
-        if (st > lastScrollTop) {
-          // Downscroll
-          getStartedButton.classList.remove("animate__flipInX");
-          getStartedButton.classList.add("animate__flipOutX");
-          learnMoreButton.classList.remove("animate__flipInX");
-          learnMoreButton.classList.add("animate__flipOutX");
-        } else {
-          // Upscroll
-          getStartedButton.classList.remove("animate__flipOutX");
-          getStartedButton.classList.add("animate__flipInX");
-          learnMoreButton.classList.remove("animate__flipOutX");
-          learnMoreButton.classList.add("animate__flipInX");
-        }
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const counterNums = document.querySelectorAll(".counter-number");
+        const speed = 20;
 
-      const videoPlayer = document.getElementById("videoPlayer");
-      const playButton = document.getElementById("playButton");
-      const videoControls = document.querySelector(".video-controls");
+        const startCounter = (curElem) => {
+          const updateNumber = () => {
+            const targetNumber = parseInt(curElem.dataset.number, 10);
+            let initialNum = parseInt(curElem.innerText.replace("+", ""), 10);
+            const incrementNumber = Math.ceil(targetNumber / speed);
 
-      playButton.addEventListener("click", () => {
-        videoPlayer.play();
-        playButton.style.display = "none"; // Hide the play button
-        videoControls.style.display = "block"; // Show video controls
-      });
+            if (initialNum < targetNumber) {
+              initialNum += incrementNumber;
+              if (initialNum > targetNumber) {
+                initialNum = targetNumber;
+              }
+              curElem.innerText = `${initialNum}+`;
+              setTimeout(updateNumber, 50);
+            } else {
+              curElem.innerText = `${targetNumber}+`;
+            }
+          };
+          updateNumber();
+        };
 
-      // You can add more functionality for pause, mute, etc. to the videoControls if needed
+        const resetCounter = (curElem) => {
+          curElem.innerText = "0+";
+        };
 
-      // Optional: Hide the video controls initially and only show them when the video is playing
-      videoPlayer.addEventListener("play", () => {
-        videoControls.style.display = "block";
-      });
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.1,
+        };
 
-      videoPlayer.addEventListener("pause", () => {
-        videoControls.style.display = "none";
-      });
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              startCounter(entry.target);
+            } else {
+              resetCounter(entry.target);
+            }
+          });
+        };
 
-      videoPlayer.addEventListener("ended", () => {
-        playButton.style.display = "block";
-        videoControls.style.display = "none";
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+
+        counterNums.forEach((counterNum) => {
+          observer.observe(counterNum);
+        });
       });
     </script>
   </body>
