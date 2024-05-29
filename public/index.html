@@ -12,14 +12,18 @@
     />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
 
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="bg-gray-100">
     <nav class="bg-zinc-800 shadow-lg text-white px-6 md:py-6 py-8">
       <div class="container mx-auto flex justify-between items-center">
         <div class="w-20 md:w-[70%]">
-          <img src="../assets/writewell.jpg" alt="writewll-logo" class="w-28" />
+          <img
+            src="../assets/writewell.jpg"
+            alt="writewll-logo"
+            class="w-28"
+            loading="lazy"
+          />
         </div>
         <div class="flex gap-12 items-center">
           <a
@@ -38,33 +42,70 @@
 
     <header class="relative h-screen overflow-hidden">
       <div class="absolute inset-0 z-0 bg-zoom">
-        <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000" style="background-image: url('../assets/image1.jpg')" id="slide1"></div>
-        <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000" style="background-image: url('../assets/image2.jpg')" id="slide2"></div>
-        <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000" style="background-image: url('../assets/image3.jpg')" id="slide3"></div>
-        <div class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000" style="background-image: url('../assets/image4.jpg')" id="slide4"></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 lazy"
+          style="background-image: url('../assets/image1.jpg')"
+          id="slide1"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 lazy"
+          style="background-image: url('../assets/image2.jpg')"
+          id="slide2"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 lazy"
+          style="background-image: url('../assets/image3.jpg')"
+          id="slide3"
+        ></div>
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-1000 lazy"
+          style="background-image: url('../assets/image4.jpg')"
+          id="slide4"
+        ></div>
       </div>
-      <div class="relative z-10 flex flex-col items-start pt-12 md:pt-16 px-6 md:px-16 h-full text-white bg-zinc-800 bg-opacity-50">
+      <div
+        class="relative z-10 flex flex-col items-start pt-12 md:pt-16 px-6 md:px-16 h-full text-white bg-zinc-800 bg-opacity-50"
+      >
         <div class="max-w-3xl">
           <div class="flex items-center gap-3">
             <span class="bg-yellow-500 w-8 h-[2.4px] animated-line"></span>
-            <p class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider font-Josefin" data-animation="animate__fadeInDown">
+            <p
+              class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider font-Josefin"
+              data-animation="animate__fadeInDown"
+            >
               Aliya Books Publication 02
             </p>
           </div>
-          <h1 class="py-2 text-4xl md:text-6xl font-bold font-Josefin" data-animation="animate__fadeInLeft">
+          <h1
+            class="py-2 text-4xl md:text-6xl font-bold font-Josefin"
+            data-animation="animate__fadeInLeft"
+          >
             Unique Solutions For Your Earning
           </h1>
-          <p class="py-2 md:py-4 text-sm md:text-lg text-gray-100 leading-relaxed font-Montserrat" data-animation="animate__fadeInRight">
-            Novel Book writing is a home-based job. You will receive books with an instruction manual at your home. You just have to copy down text as per instruction. No editing, no modification, no diagram. The project will be dispatched by courier and the same way you have to send completed work.
+          <p
+            class="py-2 md:py-4 text-sm md:text-lg text-gray-100 leading-relaxed font-Montserrat"
+            data-animation="animate__fadeInRight"
+          >
+            Novel Book writing is a home-based job. You will receive books with
+            an instruction manual at your home. You just have to copy down text
+            as per instruction. No editing, no modification, no diagram. The
+            project will be dispatched by courier and the same way you have to
+            send completed work.
           </p>
           <div class="mt-4 md:mt-6 flex flex-col md:flex-row">
             <a href="https://wa.me/918076038808">
-              <button class="px-4 md:px-6 py-2 md:py-3 mr-0 md:mr-4 mb-2 md:mb-0 hover:bg-transparent transition ease-in duration-300 border hover:border-white hover:text-white text-lg md:text-xl font-semibold text-black bg-white rounded-sm font-Montserrat" data-animation="animate__flipInX animate__delay-1s">
+              <button
+                class="px-4 md:px-6 py-2 md:py-3 mr-0 md:mr-4 mb-2 md:mb-0 hover:bg-transparent transition ease-in duration-300 border hover:border-white hover:text-white text-lg md:text-xl font-semibold text-black bg-white rounded-sm font-Montserrat"
+                data-animation="animate__flipInX animate__delay-1s"
+              >
                 Get Started
               </button>
             </a>
             <a href="#learn-more">
-              <button class="px-4 md:px-6 py-2 md:py-3 text-lg md:text-xl font-semibold text-white border border-white hover:bg-white transition ease-in duration-300 hover:text-black rounded-sm font-Montserrat" data-animation="animate__flipInX animate__delay-2s">
+              <button
+                class="px-4 md:px-6 py-2 md:py-3 text-lg md:text-xl font-semibold text-white border border-white hover:bg-white transition ease-in duration-300 hover:text-black rounded-sm font-Montserrat"
+                data-animation="animate__flipInX animate__delay-2s"
+              >
                 Learn More →
               </button>
             </a>
@@ -78,7 +119,7 @@
         <div class="lg:w-[40%] pr-4">
           <div class="flex items-center gap-3">
             <span class="bg-yellow-500 md:w-16 w-14 h-[2.4px] animated-line"></span>
-            <p class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider text-gray-800 font-Josefin" data-animation="animate__fadeInLeft">
+            <p class="text-md md:text-2xl uppercase py-4 md:py-6 tracking-wider text-gray-800" data-animation="animate__fadeInLeft">
               Why Choose Us
             </p>
           </div>
@@ -126,23 +167,24 @@
         <div class="bg-white flex flex-col lg:flex-row items-center justify-center" data-animation="animate__fadeInRight animate__delay-2s">
           <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0 flex flex-col items-center p-5">
             <ul class="list-none space-y-6">
-              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__delay-2s">
+              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__fast animate__delay-2s">
                 <img class="w-15 h-15 mr-4" src="../assets/achivement.png" alt="High Quality Content"/>
-                <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444">High Quality Content</span>
+                <span class="md:text-2xl text-xl font-bold" style="color: #444444">High Quality Content</span>
               </li>
-              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__delay-3s">
+              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__fast animate__delay-2s">
                 <img class="w-15 h-15 mr-4" src="../assets/task.png" alt="Well Organized Content"/>
-                <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444">Well Organized Content</span>
+                <span class="md:text-2xl text-xl font-bold" style="color: #444444">Well Organized Content</span>
               </li>
-              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__delay-4s">
+              <li class="flex flex-col justify-center items-center text-center" data-animation="animate__fadeInRight animate__fast animate__delay-2s">
                 <img class="w-15 h-15 mr-4" src="../assets/fastdelivery.png" alt="Deliver On Time"/>
-                <span class="md:text-2xl text-xl font-bold font-Josefin" style="color: #444444">Deliver On Time</span>
+                <span class="md:text-2xl text-xl font-bold" style="color: #444444">Deliver On Time</span>
               </li>
             </ul>
           </div>
         </div>
       </section>
     </div>
+    
 
     <div
       class="card-wrapper flex items-center overflow-x-scroll scroll-smooth cursor-grab"
@@ -299,781 +341,503 @@
       </div>
     </div>
 
-    <div
-      class="flex flex-col items-center justify-center mt-12 px-2 py-16 md:py-28 relative"  data-animation="animate__animated animate__backInLeft "
-    >
-      <div class="video-container absolute md:px-8 inset-0 z-0">
-        <video
-          id="videoPlayer"
-          class="w-full h-full object-cover"
-          autoplay
-          loop
-          muted
-        >
-          <source
-            src="https://cdn.pixabay.com/video/2023/10/15/185096-874643413_large.mp4"
-            type="video/mp4"
-          />
+    <div class="flex flex-col items-center justify-center mt-12 px-2 py-16 md:py-28 relative" data-animation="animate__animated animate__backInLeft">
+      <div class="video-container absolute inset-0 z-0 md:px-8">
+        <video id="videoPlayer" class="w-full h-full object-cover" autoplay loop muted>
+          <source src="https://cdn.pixabay.com/video/2023/10/15/185096-874643413_large.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-
-      <div
-        class="w-full lg:w-1/2 text-white bg-zinc-800 rounded-sm px-16 py-14 font-Josefin relative z-10" data-animation="animate__animated animate__bounceInLeft animate__slower "
-      >
+    
+      <div class="w-full lg:w-1/2 text-white bg-zinc-800 rounded-sm px-16 py-14 font-Josefin relative z-10" data-animation="animate__animated animate__bounceInLeft animate__slower">
         <h2 class="text-2xl font-bold mb-6 text-center">Apply For Work</h2>
         <form>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             <div>
               <label for="name" class="block mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="off"
-                placeholder="Name"
-                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-              />
+              <input type="text" id="name" name="name" autocomplete="off" placeholder="Name" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
             </div>
             <div>
               <label for="email" class="block mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="off"
-                placeholder="Email"
-                class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-              />
+              <input type="email" id="email" name="email" autocomplete="off" placeholder="Email" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
             </div>
           </div>
           <div class="mb-4">
             <label for="phone" class="block mb-2">Phone No.</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              autocomplete="off"
-              placeholder="Phone Number"
-              class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none"
-            />
+            <input type="text" id="phone" name="phone" autocomplete="off" placeholder="Phone Number" class="w-full p-2 bg-transparent border-b-2 border-yellow-500 focus:outline-none" />
           </div>
           <div class="mb-4">
             <label for="content" class="block mb-2">Content</label>
-            <select
-              id="content"
-              name="content"
-              class="w-full p-2 bg-zinc-700 border-b-2 border-yellow-500 focus:outline-none"
-            >
+            <select id="content" name="content" class="w-full p-2 bg-zinc-700 border-b-2 border-yellow-500 focus:outline-none">
               <option>Project F5</option>
               <option>Project F6</option>
             </select>
           </div>
-
-          <button
-            type="button"
-            onclick="scrollToFooter()"
-            class="w-full bg-yellow-500 text-zinc-800 mt-4 px-4 py-2 font-semibold rounded-sm hover:bg-yellow-600 transition-colors"
-          >
+          <button type="button" onclick="scrollToFooter()" class="w-full bg-yellow-500 text-zinc-800 mt-4 px-4 py-2 font-semibold rounded-sm hover:bg-yellow-600 transition-colors">
             Order Content
           </button>
         </form>
         <div class="mt-8 text-center">
           <p>
             Get in Touch with us!
-            <a
-              href="https://wa.me/918076038808"
-              class="text-yellow-500 underline"
-              >Click Here</a
-            >
+            <a href="https://wa.me/918076038808" class="text-yellow-500 underline">Click Here</a>
           </p>
         </div>
       </div>
     </div>
+    
 
-    <div
-      class="h-screen flex flex-col lg:flex-row w-full mx-auto md:mb-0 mb-80"
-    >
-      <section
-        class="w-full lg:w-3/5 p-10 lg:p-20 flex flex-col gap-6" data-animation="animate__animated animate__fadeInLeft"
-      >
-        <p
-          class="text-gray-600 font-Josefin text-xl lg:text-2xl w-full lg:w-1/3 font-bold" data-animation="animate__animated animate__fadeInUp"
-          style="letter-spacing: 4px"
-        >
-          WHY CONTENT WRITING?
+   <div class="h-screen flex flex-col lg:flex-row w-full mx-auto md:mb-0 mb-80">
+  <section class="w-full lg:w-3/5 p-10 lg:p-20 flex flex-col gap-6" data-animation="animate__animated animate__fast animate__fadeInLeft">
+    <p class="text-gray-600 font-Josefin text-xl lg:text-2xl w-full lg:w-1/3 font-bold" data-animation="animate__animated animate__fast animate__fadeInUp" style="letter-spacing: 4px">
+      WHY CONTENT WRITING?
+    </p>
+    <p class="text-gray-600 font-Josefin text-3xl lg:text-5xl font-bold" data-animation="animate__animated animate__fadeInUp animate__fast">
+      Must Read
+    </p>
+    <div class="content flex flex-col lg:flex-row items-center gap-6 lg:gap-0" data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-1s">
+      <div class="first-content flex items-start gap-5" data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-1s">
+        <img src="../assets/writing.png" alt="writing" class="w-10 h-10 lg:w-15 lg:h-15" data-animation="animate__animated animate__bounceIn animate__fast animate__delay-2s" />
+        <div class="sub flex flex-col gap-3">
+          <p class="text-lg lg:text-2xl font-bold font-Josefin" style="color: #444444">
+            Anyone Can <br /> Write
+          </p>
+          <p class="w-full lg:w-3/5 font-Josefin text-base lg:text-lg" style="color: #8a8a8a">
+            Whether you are a student, a housewife or an employee, anyone can write as it doesn't require any special setup.
+          </p>
+        </div>
+      </div>
+      <div class="second-content flex items-start gap-5" data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-2s">
+        <img src="../assets/brain.png" alt="brain" class="w-10 h-10 lg:w-15 lg:h-15" data-animation="animate__animated animate__bounceIn animate__fast animate__delay-2s" />
+        <div class="sub flex flex-col gap-2">
+          <p class="text-lg lg:text-2xl font-bold font-Josefin" style="color: #444444">
+            Opens One's <br /> Mind
+          </p>
+          <p class="w-full lg:w-3/5 font-Josefin text-base lg:text-lg" style="color: #8a8a8a">
+            Writing increases thinking & communication ability. It also fosters the ability to explain and refine our ideas to others and ourselves.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full lg:w-2/5 relative mx-auto mt-12 lg:my-28">
+    <div class="w-full flex relative justify-center lg:justify-start">
+      <div class="absolute -bottom-14 bg-zinc-800 w-60 h-28 z-10 flex items-center justify-center flex-col shadow-lg" data-animation="animate__animated animate__fast animate__fadeInDown animate__delay-3s">
+        <p class="text-white text-3xl lg:text-5xl font-bold font-Josefin">
+          25+
         </p>
-        <p
-          class="text-gray-600 font-Josefin text-3xl lg:text-5xl font-bold " data-animation="animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          Must Read
-        </p>
-        <div
-          class="content flex flex-col lg:flex-row items-center gap-6 lg:gap-0 " data-animation="animate__animated animate__fadeInUp animate__delay-2s"
-        >
-          <div
-            class="first-content flex items-start gap-5 " data-animation="animate__animated animate__fadeInUp animate__delay-2s"
-          >
-            <img
-              src="../assets/writing.png"
-              alt="writing"
-              class="w-10 h-10 lg:w-15 lg:h-15 " data-animation="animate__animated animate__bounceIn animate__delay-2s"
-            />
-            <div class="sub flex flex-col gap-3">
-              <p
-                class="text-lg lg:text-2xl font-bold font-Josefin"
-                style="color: #444444"
-              >
-                Anyone Can <br />
-                Write
-              </p>
-              <p
-                class="w-full lg:w-3/5 font-Josefin text-base lg:text-lg"
-                style="color: #8a8a8a"
-              >
-                Whether you are a student, a housewife or an employee anyone can
-                write as it doesn't required any special setup.
-              </p>
-            </div>
-          </div>
-          <div
-            class="second-content flex items-start gap-5 " data-animation="animate__animated animate__fadeInUp animate__delay-2s"
-          >
-            <img
-              src="../assets/brain.png"
-              alt="brain"
-              class="w-10 h-10 lg:w-15 lg:h-15 " data-animation="animate__animated animate__bounceIn animate__delay-2s"
-            />
-            <div class="sub flex flex-col gap-2">
-              <p
-                class="text-lg lg:text-2xl font-bold font-Josefin"
-                style="color: #444444"
-              >
-                Opens Ones <br />
-                Mind
-              </p>
-              <p
-                class="w-full lg:w-3/5 font-Josefin text-base lg:text-lg"
-                style="color: #8a8a8a"
-              >
-                Writing increases thinking & communication ability. It also
-                fosters ability to explain and refine our ideas to others and
-                ourselves
-              </p>
-            </div>
-          </div>
-        </div>
-       
-      </section>
-      <section class="w-full lg:w-2/5 relative mx-auto mt-12 lg:my-28">
-        <div class="w-full flex relative justify-center lg:justify-start">
-          <div
-            class="absolute -bottom-14 bg-zinc-800 w-60 h-28 z-10 flex items-center justify-center flex-col shadow-lg " data-animation="animate__animated animate__fadeInDown animate__delay-5s"
-          >
-            <p
-              class="text-white text-3xl z-10 lg:text-5xl font-bold font-Josefin"
-            >
-              25+
-            </p>
-            <p
-              class="font-Josefin font-bold text-lg lg:text-xl text-yellow-500"
-            >
-              Year Experience
-            </p>
-          </div>
-        </div>
-        <div class="img w-full flex items-center justify-center">
-          <div
-            class="w-full lg:w-3/4 h-60 lg:h-80 bg-center md:bg-cover bg-contain " data-animation="animate__animated animate__zoomIn animate__delay-4s"
-            style="background-image: url('../assets/content-writing.jpg')"
-          ></div>
-        </div>
-        <div
-          class="w-full flex justify-end lg:justify-end absolute bottom-[-60px] lg:bottom-12 lg:right-3"
-        >
-          <div
-            class="flex items-center justify-center flex-col p-5 lg:p-7 bg-zinc-800 w-72 h-40 " data-animation="animate__animated animate__fadeInUp animate__delay-5s"
-          >
-            <p
-              class="font-Josefin text-lg lg:text-2xl italic text-white text-center"
-            >
-              “Content is nothing but showing your creativity through words”
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="relative bg-zinc-900 text-white py-28 my-12">
-      <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="
-          background-image: url('../assets/happyclient.jpg');
-          background-attachment: fixed;
-        "
-        aria-hidden="true"
-      ></div>
-      <div class="absolute inset-0 bg-black bg-opacity-75"></div>
-      <!-- Overlay -->
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center font-Josefin"
-        >
-          <div class="text-center gap-6 md:flex md:items-center mb-12 md:mb-0">
-            <h2
-              class="text-6xl font-bold text-yellow-400 counter-number"
-              data-number="987"
-            >
-              0+
-            </h2>
-            <p class="text-xl font-semibold">
-              Our Happy Clients All Over India
-            </p>
-          </div>
-          <div class="text-center gap-6 md:flex md:items-center">
-            <h2
-              class="text-6xl font-bold text-yellow-400 counter-number"
-              data-number="1200"
-            >
-              0+
-            </h2>
-            <p class="text-xl font-semibold">
-              Our Happy Clients All Over World
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="py-12 font-Josefin " data-animation="animate__animated animate__fadeIn">
-      <div class="text-center mb-12">
-        <div
-          class="flex justify-center gap-3 items-center mb-4 " data-animation="animate__animated animate__fadeInDown"
-        >
-          <span class="bg-yellow-500 w-20 h-[2.4px]"></span>
-          <h2
-            class="text-yellow-500 text-lg font-bold uppercase tracking-widest mb-2"
-          >
-            Best Services
-          </h2>
-        </div>
-
-        <h1
-          class="md:text-5xl text-3xl px-5 font-bold text-zinc-800 " data-animation="animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          We Have Services Offer For You
-        </h1>
-      </div>
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
-      >
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-1s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/seo.png"
-              alt="SEO Content Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Tactics For Business</h3>
-              <h2 class="text-xl font-bold text-zinc-800">SEO Content</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            As content is the main thing in a website for SEO basically. So,
-            content writers are always in demand for unique content.
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-16"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-2s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/copy-writing.png"
-              alt="Script Writing Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Make Strategy</h3>
-              <h2 class="text-xl font-bold text-zinc-800">Script Writing</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            As there are many industries in which content is everything. So,
-            requirement of writers who write different & interesting content is
-            always on peak.
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-8"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-3s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/writer.png"
-              alt="Website Content Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Product</h3>
-              <h2 class="text-xl font-bold text-zinc-800">Website Content</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            Requirement of someone who writes product description in an
-            effective way is high as good description increases the possibility
-            of product sell.
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-10"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="py-12 font-Josefin " data-animation="animate__animated fadeIn animate__delay-2s">
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4"
-      >
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-3s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/writing-tech.png"
-              alt="SEO Content Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Make Effective</h3>
-              <h2 class="text-xl font-bold text-zinc-800">Technical Writing</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            Technical writing is writing or drafting technical communication
-            used in technical and occupational fields, such as computer hardware
-            and software.
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-8"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-4s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/post.png"
-              alt="Script Writing Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Millennials Writer</h3>
-              <h2 class="text-xl font-bold text-zinc-800">Social Media Post</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            A blog post is any
-            <span class="text-gray-600 font-bold"
-              >article, news piece, or guide that’s published in the blog
-              section of a website.</span
-            >
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-12"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-        <div
-          class="bg-white p-6 rounded-sm shadow-lg " data-animation="animate__animated animate__zoomIn animate__delay-5s"
-        >
-          <div class="flex items-center mb-4">
-            <img
-              src="../assets/online.png"
-              alt="Website Content Icon"
-              class="h-12 w-12 text-yellow-500"
-            />
-            <div class="ml-4">
-              <h3 class="text-zinc-500 text-sm">Content Writer</h3>
-              <h2 class="text-xl font-bold text-zinc-800">Blog Post</h2>
-            </div>
-          </div>
-          <hr class="mt-8 mb-4 border-yellow-500" />
-
-          <p class="text-zinc-600 leading-7 text-lg mb-4">
-            Content for Social Media Handle is required to be perfect as it
-            gives all the necessary info in limited words.
-          </p>
-          <a
-            href="#"
-            class="text-yellow-500 font-semibold hover:underline flex items-center mt-12"
-          >
-            Learn More <span class="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="text-center mt-32 font-Josefin " data-animation="animate__animated animate__fadeInDown"
-    >
-      <div class="flex justify-center gap-3 items-center mb-4">
-        <span class="bg-yellow-500 w-20 h-[2.4px]"></span>
-        <p class="text-lg text-yellow-500 font-bold tracking-widest">
-          PRICING PLAN
+        <p class="font-Josefin font-bold text-lg lg:text-xl text-yellow-500">
+          Years Experience
         </p>
       </div>
-
-      <h1 class="text-5xl font-bold text-gray-800">
-        We Have Best Price For You
-      </h1>
     </div>
-
-    <div
-      class="flex md:p-0 p-4 flex-wrap justify-center gap-16 mt-12 max-w-7xl mx-auto font-Josefin"
-    >
-      <div
-        class="w-full md:w-[calc(50%-12px)] max-w-lg bg-gray-100 shadow-xl overflow-hidden " data-animation="animate__animated animate__fadeInUp animate__delay-1s"
-      >
-        <div class="bg-zinc-800 text-white p-10 text-center">
-          <h2 class="text-3xl font-bold text-yellow-400">Handwriting Work</h2>
-          <p class="mt-2 font-Montserrat">
-            You Have To Just Copy All The Instructions (content) In All Capital
-            letters That We Provide In Novel Book
-          </p>
-        </div>
-        <div class="p-10 text-center">
-          <div class="flex items-center justify-center">
-            <div class="flex">
-              <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
-              <h1 class="text-[5rem] font-bold text-gray-800">5000</h1>
-            </div>
-            <span class="text-yellow-400">Payout</span>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">55 Front & 110 Back</p>
-          </div>
-
-          <hr />
-
-          <div class="flex items-center justify-center gap-3 z-10">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              Time Duration - 5 Days
-            </p>
-          </div>
-
-          <hr />
-
-          <div class="flex justify-center z-10">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              Book security For Our Work security That Is Compulsory Amount -
-              1000 /-
-            </p>
-          </div>
-          <a href="https://wa.me/918076038808">
-            <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
-              Contact Us Now
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div
-        class="w-full md:w-[calc(50%-12px)] max-w-lg bg-zinc-800 shadow-lg overflow-hidden " data-animation="animate__animated animate__fadeInDown animate__delay-1s"
-      >
-        <div class="bg-yellow-400 text-white p-10 text-center">
-          <h2 class="text-3xl font-bold">Handwriting Work WFH</h2>
-          <p class="mt-2 font-Montserrat">
-            You Have To Just Copy All The Instructions (content) In All Capital
-            letters That We Provide In Novel Book
-          </p>
-        </div>
-        <div class="p-10 text-center">
-          <div class="flex items-center justify-center">
-            <div class="flex">
-              <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
-              <h1 class="text-[5rem] font-bold text-yellow-400">10000</h1>
-            </div>
-            <span class="text-white">Payout</span>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-200 mt-4 mb-4">82 Front & 164 Back</p>
-          </div>
-          <hr />
-
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-200 mt-4 mb-4">
-              Time Duration - 7 Days
-            </p>
-          </div>
-
-          <hr />
-
-          <div class="flex md:items-center justify-center gap-3">
-            <img
-              src="../assets/checked.png"
-              alt="check"
-              class="w-6 h-6 md:mt-0 mt-4"
-            />
-            <p class="text-lg text-gray-200 mt-4 mb-4">
-              Book security (Compulsory) Amount - 1550/-
-            </p>
-          </div>
-          <a href="https://wa.me/918076038808">
-            <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
-              Contact Us Now
-            </button>
-          </a>
-        </div>
-      </div>
+    <div class="img w-full flex items-center justify-center">
+      <div class="w-full lg:w-3/4 h-60 lg:h-80 bg-center bg-cover" data-animation="animate__animated animate__zoomIn animate__delay-3s" style="background-image: url('../assets/content-writing.jpg')"></div>
     </div>
-
-    <div
-      class="w-full md:px-52 px-4 mx-auto mt-8 " data-animation="animate__animated animate__fadeIn animate__delay-1s"
-    >
-      <div class="bg-zinc-900 text-white py-6 px-4">
-        <h2
-          class="text-yellow-500 md:text-2xl text-xl font-bold text-center font-Josefin pt-4"
-        >
-          PROJECT NAME - F15
-        </h2>
-        <p class="text-center md:text-lg text-sm font-Montserrat">
-          You Have To Copy All The (Content) In All Capital letters That We
-          Provide In Novel Book
+    <div class="w-full flex justify-end lg:justify-end absolute bottom-[-60px] lg:bottom-12 lg:right-3">
+      <div class="flex items-center justify-center flex-col p-5 lg:p-7 bg-zinc-800 w-72 h-40" data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-3s">
+        <p class="font-Josefin text-lg lg:text-2xl italic text-white text-center">
+          “Content is nothing but showing your creativity through words”
         </p>
       </div>
-      <div
-        class="bg-gray-100 md:py-8 py-8 flex flex-col justify-around font-Josefin md:px-24 px-3 shadow-xl " 
-      >
-        <div class="flex items-center justify-center">
-          <div class="flex">
-            <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
-            <h1 class="text-[4rem] font-bold text-zinc-700">17000</h1>
-          </div>
-          <span class="text-yellow-400 mt-8">Payout</span>
+    </div>
+  </section>
+</div>
+
+
+<div class="relative bg-zinc-900 text-white py-28 my-12">
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('../assets/happyclient.jpg'); background-attachment: fixed;"
+    aria-hidden="true"
+  ></div>
+  <div class="absolute inset-0 bg-black bg-opacity-75"></div>
+  <!-- Overlay -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center font-Josefin">
+      <div class="text-center gap-6 md:flex md:items-center mb-12 md:mb-0">
+        <h2 class="text-6xl font-bold text-yellow-400 counter-number" data-number="987">0+</h2>
+        <p class="text-xl font-semibold">Our Happy Clients All Over India</p>
+      </div>
+      <div class="text-center gap-6 md:flex md:items-center">
+        <h2 class="text-6xl font-bold text-yellow-400 counter-number" data-number="1200">0+</h2>
+        <p class="text-xl font-semibold">Our Happy Clients All Over World</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="py-12 font-Josefin" data-animation="animate__animated animate__fadeIn">
+  <div class="text-center mb-12">
+    <div class="flex justify-center gap-3 items-center mb-4" data-animation="animate__animated animate__fadeInDown">
+      <span class="bg-yellow-500 w-20 h-[2.4px]"></span>
+      <h2 class="text-yellow-500 text-lg font-bold uppercase tracking-widest mb-2">Best Services</h2>
+    </div>
+    <h1 class="md:text-5xl text-3xl px-5 font-bold text-zinc-800" data-animation="animate__animated animate__fadeInUp animate__delay-1s">
+      We Have Services to Offer For You
+    </h1>
+  </div>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/seo.png" alt="SEO Content Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Tactics For Business</h3>
+          <h2 class="text-xl font-bold text-zinc-800">SEO Content</h2>
         </div>
-        <div class="flex items-center justify-center gap-3">
-          <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-          <p class="text-lg text-gray-500 mt-4 mb-4">55 Front & 110 Back</p>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        As content is the main thing in a website for SEO basically. So, content writers are always in demand for unique content.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-16">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/copy-writing.png" alt="Script Writing Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Make Strategy</h3>
+          <h2 class="text-xl font-bold text-zinc-800">Script Writing</h2>
         </div>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        As there are many industries in which content is everything. So, the requirement of writers who write different & interesting content is always on peak.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-8">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/writer.png" alt="Website Content Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Product</h3>
+          <h2 class="text-xl font-bold text-zinc-800">Website Content</h2>
+        </div>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        Requirement of someone who writes product descriptions in an effective way is high as good description increases the possibility of product sell.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-10">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="py-12 font-Josefin" data-animation="animate__animated fadeIn animate__delay-1s">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/writing-tech.png" alt="Technical Writing Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Make Effective</h3>
+          <h2 class="text-xl font-bold text-zinc-800">Technical Writing</h2>
+        </div>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        Technical writing involves creating technical communication for various fields, such as computer hardware and software.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-8">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/post.png" alt="Social Media Post Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Millennials Writer</h3>
+          <h2 class="text-xl font-bold text-zinc-800">Social Media Post</h2>
+        </div>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        A social media post can be any article, news piece, or guide published on a social platform, effectively engaging with your audience.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-12">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+    <div class="bg-white p-6 rounded-sm shadow-lg" data-animation="animate__animated animate__zoomIn animate__delay-1s">
+      <div class="flex items-center mb-4">
+        <img src="../assets/online.png" alt="Blog Post Icon" class="h-12 w-12" />
+        <div class="ml-4">
+          <h3 class="text-zinc-500 text-sm">Content Writer</h3>
+          <h2 class="text-xl font-bold text-zinc-800">Blog Post</h2>
+        </div>
+      </div>
+      <hr class="mt-8 mb-4 border-yellow-500" />
+      <p class="text-zinc-600 leading-7 text-lg mb-4">
+        Blog posts provide valuable content for your audience, offering insights and information in a concise, engaging manner.
+      </p>
+      <a href="#" class="text-yellow-500 font-semibold hover:underline flex items-center mt-12">
+        Learn More <span class="ml-2">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="text-center mt-32 font-Josefin" data-animation="animate__animated animate__fadeInDown">
+  <div class="flex justify-center gap-3 items-center mb-4">
+    <span class="bg-yellow-500 w-20 h-[2.4px]"></span>
+    <p class="text-lg text-yellow-500 font-bold tracking-widest">PRICING PLAN</p>
+  </div>
+  <h1 class="text-5xl font-bold text-gray-800">We Have Best Price For You</h1>
+</div>
+
+<div class="flex md:p-0 p-4 flex-wrap justify-center gap-16 mt-12 max-w-7xl mx-auto font-Josefin">
+  <div class="w-full md:w-[calc(50%-12px)] max-w-lg bg-gray-100 shadow-xl overflow-hidden" data-animation="animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="bg-zinc-800 text-white p-10 text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">Handwriting Work</h2>
+      <p class="mt-2 font-Montserrat">
+        You have to just copy all the instructions (content) in all capital
+        letters that we provide in the novel book.
+      </p>
+    </div>
+    <div class="p-10 text-center">
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
+          <h1 class="text-[5rem] font-bold text-gray-800">5000</h1>
+        </div>
+        <span class="text-yellow-400">Payout</span>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">55 Front & 110 Back</p>
+      </div>
+      <hr />
+      <div class="flex items-center justify-center gap-3 z-10">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">Time Duration - 5 Days</p>
+      </div>
+      <hr />
+      <div class="flex justify-center z-10">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">
+          Book security for our work security that is a compulsory amount -
+          1000 /-
+        </p>
+      </div>
+      <a href="https://wa.me/918076038808">
+        <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
+          Contact Us Now
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="w-full md:w-[calc(50%-12px)] max-w-lg bg-zinc-800 shadow-lg overflow-hidden" data-animation="animate__animated animate__fadeInDown animate__delay-1s">
+    <div class="bg-yellow-400 text-white p-10 text-center">
+      <h2 class="text-3xl font-bold">Handwriting Work WFH</h2>
+      <p class="mt-2 font-Montserrat">
+        You have to just copy all the instructions (content) in all capital
+        letters that we provide in the novel book.
+      </p>
+    </div>
+    <div class="p-10 text-center">
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
+          <h1 class="text-[5rem] font-bold text-yellow-400">10000</h1>
+        </div>
+        <span class="text-white">Payout</span>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">82 Front & 164 Back</p>
+      </div>
+      <hr />
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">Time Duration - 7 Days</p>
+      </div>
+      <hr />
+      <div class="flex md:items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6 md:mt-0 mt-4" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">
+          Book security (Compulsory) Amount - 1550/-
+        </p>
+      </div>
+      <a href="https://wa.me/918076038808">
+        <button class="mt-6 bg-yellow-400 text-white py-3 px-8 transition duration-300 hover:bg-zinc-800 hover:-translate-y-1">
+          Contact Us Now
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="w-full md:px-52 px-4 mx-auto mt-8" data-animation="animate__animated animate__fadeIn ">
+  <div class="bg-zinc-900 text-white py-6 px-4">
+    <h2 class="text-yellow-500 md:text-2xl text-xl font-bold text-center font-Josefin pt-4">
+      PROJECT NAME - F15
+    </h2>
+    <p class="text-center md:text-lg text-sm font-Montserrat">
+      You have to copy all the (content) in all capital letters that we provide in the novel book.
+    </p>
+  </div>
+  <div class="bg-gray-100 md:py-8 py-8 flex flex-col justify-around font-Josefin md:px-24 px-3 shadow-xl">
+    <div class="flex items-center justify-center">
+      <div class="flex">
+        <p class="text-lg font-bold mt-3 text-zinc-700">₹</p>
+        <h1 class="text-[4rem] font-bold text-zinc-700">17000</h1>
+      </div>
+      <span class="text-yellow-400 mt-8">Payout</span>
+    </div>
+    <div class="flex items-center justify-center gap-3">
+      <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+      <p class="text-lg text-gray-500 mt-4 mb-4">55 Front & 110 Back</p>
+    </div>
+    <hr />
+    <div class="flex items-center justify-center gap-3">
+      <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+      <p class="text-lg text-gray-500 mt-4 mb-4">Time Duration - 5 Days</p>
+    </div>
+    <hr />
+    <div class="flex justify-center">
+      <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4 mx-2" />
+      <p class="text-lg text-gray-500 mt-4 mb-4">
+        Book security for our work security that is a compulsory amount - 1000 /-
+      </p>
+    </div>
+    <div class="flex justify-center mt-8">
+      <a href="https://wa.me/918076038808">
+        <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
+          Contact Us Now
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex flex-wrap justify-center gap-16 mt-12 max-w-7xl mx-auto font-Josefin" data-animation="animate__animated animate__fadeIn">
+  <div class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2 bg-gray-100 shadow-xl overflow-hidden" data-animation="animate__animated animate__fadeInLeft animate__delay-1s">
+    <!-- Project 1 -->
+    <div class="bg-zinc-800 text-white p-10 text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">PROJECT NAME - F25</h2>
+      <p class="mt-2 font-Montserrat">This is a handwriting work</p>
+    </div>
+    <div class="p-10 text-center">
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
+          <h1 class="text-[5rem] font-bold text-gray-800">25000</h1>
+        </div>
+        <span class="text-yellow-400">Payout</span>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">260 front & back 520</p>
+      </div>
+      <hr />
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">Time duration - 25 Days</p>
+      </div>
+      <hr />
+      <div class="flex justify-center">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">Security amount - ₹2500 (Compulsory)</p>
+      </div>
+      <a href="https://wa.me/918076038808">
+        <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">Contact Us Now</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2 bg-zinc-800 shadow-lg overflow-hidden" data-animation="animate__animated animate__fadeInUp animate__delay-1s">
+    <!-- Project 2 -->
+    <div class="bg-yellow-400 text-white p-10 text-center">
+      <h2 class="text-3xl font-bold">PROJECT NAME - F8</h2>
+      <p class="mt-2 font-Montserrat">You Have To Copy All The (Content) In All Capital letters That We Provide In Novel Book</p>
+    </div>
+    <div class="p-10 text-center">
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
+          <h1 class="text-[5rem] font-bold text-yellow-400">9000</h1>
+        </div>
+        <span class="text-white">Payout</span>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">90 Front & 180 Back</p>
+      </div>
+      <hr />
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">Time Duration - 8 Days</p>
+      </div>
+      <hr />
+      <div class="flex md:items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6 md:mt-0 mt-4" />
+        <p class="text-lg text-gray-200 mt-4 mb-4">Book security (Compulsory) Amount - ₹1600/-</p>
+      </div>
+      <a href="https://wa.me/918076038808">
+        <button class="mt-6 bg-yellow-400 text-white py-3 px-8 transition duration-300 hover:bg-yellow-600 hover:-translate-y-1">Contact Us Now</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="w-full md:w-[calc(50%-12px)] mx-2 max-w-lg bg-gray-100 shadow-xl overflow-hidden" data-animation="animate__animated animate__fadeInLeft">
+    <!-- Project 3 -->
+    <div class="bg-zinc-800 text-white p-10 text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">PROJECT NAME - F7 (Hindi)</h2>
+      <p class="mt-2 font-Montserrat">आपको उपन्यास पुस्तक I की नकल करनी है</p>
+    </div>
+    <div class="p-10 text-center">
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
+          <h1 class="text-[5rem] font-bold text-gray-800">10000</h1>
+        </div>
+        <span class="text-yellow-400">Payout</span>
+      </div>
+      <div class="flex items-center justify-center gap-3">
+        <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
+        <p class="text-lg text-gray-500 mt-4 mb-4">आपको उपन्यास पुस्तक I की नकल करनी है</p>
+      </div
         <hr />
         <div class="flex items-center justify-center gap-3">
           <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-          <p class="text-lg text-gray-500 mt-4 mb-4">Time Duration - 5 Days</p>
+          <p class="text-lg text-gray-500 mt-4 mb-4">समय अवधि - 7 दिन</p>
         </div>
         <hr />
         <div class="flex justify-center">
-          <img
-            src="../assets/checked.png"
-            alt="check"
-            class="w-6 h-6 mt-4 mx-2"
-          />
-          <p class="text-lg text-gray-500 mt-4 mb-4">
-            Book security For Our Work security That Is Compulsory Amount - 1000
-            /-
-          </p>
+          <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
+          <p class="text-lg text-gray-500 mt-4 mb-4">सुरक्षा राशि - ₹1550 (जो अनिवार्य है)</p>
         </div>
-        <div class="flex justify-center mt-8">
-          <a href="https://wa.me/918076038808">
-            <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
-              Contact Us Now
-            </button>
-          </a>
-        </div>
+        <a href="https://wa.me/918076038808">
+          <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">Contact Us Now</button>
+        </a>
       </div>
     </div>
-
-    <div
-      class="flex flex-wrap justify-center gap-16 mt-12 max-w-7xl mx-auto font-Josefin " data-animation="animate__animated animate__fadeIn"
-    >
-      <div
-        class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2 bg-gray-100 shadow-xl overflow-hidden " data-animation="animate__animated animate__fadeInLeft animate__delay-1s"
-      >
-        <!-- Project 1 -->
-        <div class="bg-zinc-800 text-white p-10 text-center">
-          <h2 class="text-3xl font-bold text-yellow-400">PROJECT NAME - F25</h2>
-          <p class="mt-2 font-Montserrat">This is a handwriting work</p>
-        </div>
-        <div class="p-10 text-center">
-          <div class="flex items-center justify-center">
-            <div class="flex">
-              <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
-              <h1 class="text-[5rem] font-bold text-gray-800">25000</h1>
-            </div>
-            <span class="text-yellow-400">Payout</span>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">260 front & back 520</p>
-          </div>
-          <hr />
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              Time duration - 25 Days
-            </p>
-          </div>
-          <hr />
-          <div class="flex justify-center">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              Security amount - ₹2500 (Compulsory)
-            </p>
-          </div>
-          <a href="https://wa.me/918076038808">
-            <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
-              Contact Us Now
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div
-        class="w-full md:w-[calc(50%-12px)] max-w-lg mx-2 bg-zinc-800 shadow-lg overflow-hidden " data-animation="animate__animated animate__fadeInUp animate__delay-2s"
-      >
-        <!-- Project 2 -->
-        <div class="bg-yellow-400 text-white p-10 text-center">
-          <h2 class="text-3xl font-bold">PROJECT NAME - F8</h2>
-          <p class="mt-2 font-Montserrat">
-            You Have To Copy All The (Content) In All Capital letters That We
-            Provide In Novel Book
-          </p>
-        </div>
-        <div class="p-10 text-center">
-          <div class="flex items-center justify-center">
-            <div class="flex">
-              <p class="text-lg font-bold mt-3 text-gray-200">₹</p>
-              <h1 class="text-[5rem] font-bold text-yellow-400">9000</h1>
-            </div>
-            <span class="text-white">Payout</span>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-200 mt-4 mb-4">90 Front & 180 Back</p>
-          </div>
-          <hr />
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-200 mt-4 mb-4">
-              Time Duration - 8 Days
-            </p>
-          </div>
-          <hr />
-          <div class="flex md:items-center justify-center gap-3">
-            <img
-              src="../assets/checked.png"
-              alt="check"
-              class="w-6 h-6 md:mt-0 mt-4"
-            />
-            <p class="text-lg text-gray-200 mt-4 mb-4">
-              Book security (Compulsory) Amount - ₹1600/-
-            </p>
-          </div>
-          <a href="https://wa.me/918076038808">
-            <button class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1">
-              Contact Us Now
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div
-        class="w-full md:w-[calc(50%-12px)] mx-2 max-w-lg bg-gray-100 shadow-xl overflow-hidden " data-animation="animate__animated animate__fadeInLeft "
-      >
-        <!-- Project 3 -->
-        <div class="bg-zinc-800 text-white p-10 text-center">
-          <h2 class="text-3xl font-bold text-yellow-400">
-            PROJECT NAME - F7 (Hindi)
-          </h2>
-          <p class="mt-2 font-Montserrat">
-            आपको उपन्यास पुस्तक I की नकल करनी है
-          </p>
-        </div>
-        <div class="p-10 text-center">
-          <div class="flex items-center justify-center">
-            <div class="flex">
-              <p class="text-lg font-bold mt-3 text-zinc-800">₹</p>
-              <h1 class="text-[5rem] font-bold text-gray-800">10000</h1>
-            </div>
-            <span class="text-yellow-400">Payout</span>
-          </div>
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              आपको उपन्यास पुस्तक I की नकल करनी है
-            </p>
-          </div>
-          <hr />
-          <div class="flex items-center justify-center gap-3">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">समय अवधि - 7 दिन</p>
-          </div>
-          <hr />
-          <div class="flex justify-center">
-            <img src="../assets/checked.png" alt="check" class="w-6 h-6 mt-4" />
-            <p class="text-lg text-gray-500 mt-4 mb-4">
-              सुरक्षा राशि - ₹1550 (जो अनिवार्य है)
-            </p>
-          </div>
-          <a href="https://wa.me/918076038808">
-            <button
-              class="mt-6 bg-zinc-800 text-white py-3 px-8 transition duration-300 hover:bg-yellow-400 hover:-translate-y-1"
-            >
-              Contact Us Now
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
 
     <div class="bg-zinc-100 dark:bg-zinc-900 my-12">
       <div class="relative">
         <img
           src="../assets/image1.jpg"
           alt="Promotion Image"
-          class="w-full md:h-[550px] h-[600px] object-cover " data-animation="animate__animated animate__fadeIn"
+          class="w-full md:h-[550px] h-[600px] object-cover"
+          data-animation="animate__animated animate__fadeIn"
         />
         <div
           class="absolute inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center gap-2 md:gap-16 p-4 md:p-8 font-Josefin tracking-widest"
         >
           <div
-            class="flex flex-col w-full md:w-[58%] ml-2 md:ml-12 mb-2 mt-12 md:mb-0 " data-animation="animate__animated animate__fadeInLeft animate__delay-1s"
+            class="flex flex-col w-full md:w-[58%] ml-2 md:ml-12 mb-2 mt-12 md:mb-0"
+            data-animation="animate__animated animate__fadeInLeft"
           >
             <span
               class="text-yellow-500 text-lg font-semibold flex items-center gap-4 md:gap-5"
@@ -1084,27 +848,32 @@
               PROMOTION
             </span>
             <h1
-              class="text-white text-3xl md:text-5xl font-bold leading-snug mt-4 md:mt-5 " data-animation="animate__animated animate__fadeInDown animate__delay-2s"
+              class="text-white text-3xl md:text-5xl font-bold leading-snug mt-4 md:mt-5"
+              data-animation="animate__animated animate__fadeInDown animate__delay-1s"
             >
               You Need Cheap Content Writing For Your Business? Contenta Is The
               Solution!
             </h1>
           </div>
           <div
-            class="mt-6 flex md:flex-row flex-col items-start text-yellow-500 md:w-[35%] justify-start md:justify-end mx-2 " data-animation="animate__animated animate__fadeInRight animate__delay-1s"
+            class="mt-6 flex md:flex-row flex-col items-start text-yellow-500 md:w-[35%] justify-start md:justify-end mx-2"
+            data-animation="animate__animated animate__fadeInRight animate__delay-1s"
           >
             <img
               src="../assets/telephone.png"
               alt="Call Icon"
-              class="w-8 h-8 md:w-12 md:h-12 " data-animation="animate__animated animate__rotateIn animate__delay-2s"
+              class="w-8 h-8 md:w-12 md:h-12"
+              data-animation="animate__animated animate__rotateIn animate__delay-1s"
             />
             <div class="md:ml-4">
               <span
-                class="text-white text-lg md:text-2xl font-bold " data-animation="animate__animated animate__zoomIn animate__delay-2.5s"
+                class="text-white text-lg md:text-2xl font-bold"
+                data-animation="animate__animated animate__zoomIn animate__delay-1s"
                 >Call For Business</span
               >
               <span
-                class="text-3xl md:text-4xl font-bold " data-animation="animate__animated animate__zoomIn animate__delay-2.5s"
+                class="text-3xl md:text-4xl font-bold"
+                data-animation="animate__animated animate__zoomIn animate__delay-2s"
                 >+91-7394998880</span
               >
             </div>
@@ -1169,7 +938,8 @@
 
     <div class="flex flex-wrap justify-center p-4 font-Josefin">
       <div
-        class="w-full md:w-1/2 lg:w-1/3 p-4" data-animation="animate__animated animate__fadeInLeft"
+        class="w-full md:w-1/2 lg:w-1/3 p-4"
+        data-animation="animate__animated animate__fadeInLeft"
       >
         <div class="bg-white shadow-xl rounded-md overflow-hidden">
           <img
@@ -1179,18 +949,22 @@
           />
           <div class="py-4 px-6 bg-yellow-400 text-xl text-white italic">
             <p
-              class="mb-2 leading-loose" data-animation="animate__animated animate__fadeInUp animate__delay-1s"
+              class="mb-2 leading-loose"
+              data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-1s"
             >
               I worked with them, and wrote for them. Their coordination and
               everything was good. I also got payment on time for the pages I
               wrote.
             </p>
             <p
-              class="font-bold " data-animation="animate__animated animate__fadeInUp animate__delay-2s"
+              class="font-bold"
+              data-animation="animate__animated animate__fadeInUp animate__delay-2s"
             >
               Kavita
             </p>
-            <p data-animation="animate__animated animate__fadeInUp animate__delay-3s">
+            <p
+              data-animation="animate__animated animate__fadeInUp animate__delay-2s"
+            >
               Writer
             </p>
           </div>
@@ -1200,7 +974,8 @@
       <div class="w-full md:w-1/2 lg:w-2/3 p-4">
         <div class="space-y-4">
           <div
-            class="bg-gray-100 italic p-6 shadow-lg " data-animation="animate__animated animate__fadeInDown animate__delay-1s"
+            class="bg-gray-100 italic p-6 shadow-lg"
+            data-animation="animate__animated animate__fadeInDown animate__fast animate__delay-1s"
           >
             <h3 class="font-bold mb-2 text-zinc-500">How do we get paid?</h3>
             <p class="text-zinc-400">
@@ -1210,7 +985,8 @@
           </div>
 
           <div
-            class="bg-zinc-800 text-white italic p-6 shadow-lg " data-animation="animate__animated animate__fadeInDown animate__delay-2s"
+            class="bg-zinc-800 text-white italic p-6 shadow-lg"
+            data-animation="animate__animated animate__fadeInDown animate__fast animate__delay-2s"
           >
             <h3 class="font-bold mb-2">
               Who will bear paper, writing material, courier, etc. charges?
@@ -1223,7 +999,8 @@
           </div>
 
           <div
-            class="bg-gray-100 italic p-6 shadow-lg " data-animation="animate__animated animate__fadeInUp animate__delay-3s"
+            class="bg-gray-100 italic p-6 shadow-lg"
+            data-animation="animate__animated animate__fadeInUp animate__fast animate__delay-2s"
           >
             <h3 class="font-bold mb-2 text-zinc-500">How to Apply?</h3>
             <p class="text-zinc-400">
@@ -1238,168 +1015,147 @@
 
     <div class="text-center mt-28 font-Josefin px-4">
       <div
-        class="flex justify-center items-center gap-5 " data-animation="animate__animated animate__fadeInDown"
+        class="flex justify-center items-center gap-5"
+        data-animation="animate__animated animate__fadeInDown"
       >
         <span
-          class="bg-yellow-500 w-20 h-[2.4px] " data-animation="animate__animated animate__slideInLeft"
+          class="bg-yellow-500 w-20 h-[2.4px]"
+          data-animation="animate__animated animate__slideInLeft"
         ></span>
         <h6
-          class="heading1 text-zinc-700 tracking-widest md:text-md text-sm font-bold " data-animation="animate__animated animate__fadeInLeft"
+          class="heading1 text-zinc-700 tracking-widest md:text-md text-sm font-bold"
+          data-animation="animate__animated animate__fadeInLeft"
         >
           LATEST NEWS
         </h6>
       </div>
 
       <h3
-        class="heading md:my-4 my-3 text-zinc-700 md:text-5xl text-3xl font-bold " data-animation="animate__animated animate__zoomIn"
+        class="heading md:my-4 my-3 text-zinc-700 md:text-5xl text-3xl font-bold"
+        data-animation="animate__animated animate__zoomIn"
       >
         We Have Latest News For You
       </h3>
     </div>
 
-   <div class="flex flex-wrap justify-center gap-8 p-4">
-  <!-- Card 1 -->
-  <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp">
-    <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image1.jpg" alt="Best Content Writing Courses Online" />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
-        Best Content Writing Courses Online (Free & Paid)
+    <div class="flex flex-wrap justify-center gap-8 p-4">
+      <!-- Card 1 -->
+      <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp">
+        <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image1.jpg" alt="Best Content Writing Courses Online" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
+            Best Content Writing Courses Online (Free & Paid)
+          </div>
+          <p class="text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">NEWS</span>
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-700">
+          <span class="text-zinc-400 text-sm">November 14, 2022</span>
+          <span class="text-zinc-400 text-sm">• No Comments</span>
+        </div>
       </div>
-      <p class="text-zinc-300 text-base">
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-      </p>
-      <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">NEWS</span>
-    </div>
-    <div class="px-6 py-4 border-t border-zinc-700">
-      <span class="text-zinc-400 text-sm">November 14, 2022</span>
-      <span class="text-zinc-400 text-sm">• No Comments</span>
-    </div>
-  </div>
-
-  <!-- Card 2 -->
-  <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp animate__delay-1s">
-    <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image4.jpg" alt="4 Reasons Why I Chose Content Writing Over Copywriting" />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
-        4 Reasons Why I Chose Content Writing Over Copywriting
+    
+      <!-- Card 2 -->
+      <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp">
+        <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image4.jpg" alt="4 Reasons Why I Chose Content Writing Over Copywriting" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
+            4 Reasons Why I Chose Content Writing Over Copywriting
+          </div>
+          <p class="text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-700">
+          <span class="text-zinc-400 text-sm">November 14, 2022</span>
+          <span class="text-zinc-400 text-sm">• No Comments</span>
+        </div>
       </div>
-      <p class="text-zinc-300 text-base">
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-      </p>
-      <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
-    </div>
-    <div class="px-6 py-4 border-t border-zinc-700">
-      <span class="text-zinc-400 text-sm">November 14, 2022</span>
-      <span class="text-zinc-400 text-sm">• No Comments</span>
-    </div>
-  </div>
-
-  <!-- Card 3 -->
-  <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp animate__delay-2s">
-    <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image2.jpg" alt="Content Marketing: Blogging For Business By LinkedIn" />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
-        Content Marketing: Blogging For Business By LinkedIn
+    
+      <!-- Card 3 -->
+      <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInUp">
+        <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image2.jpg" alt="Content Marketing: Blogging For Business By LinkedIn" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
+            Content Marketing: Blogging For Business By LinkedIn
+          </div>
+          <p class="text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-700">
+          <span class="text-zinc-400 text-sm">November 14, 2022</span>
+          <span class="text-zinc-400 text-sm">• No Comments</span>
+        </div>
       </div>
-      <p class="text-zinc-300 text-base">
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-      </p>
-      <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
-    </div>
-    <div class="px-6 py-4 border-t border-zinc-700">
-      <span class="text-zinc-400 text-sm">November 14, 2022</span>
-      <span class="text-zinc-400 text-sm">• No Comments</span>
-    </div>
-  </div>
-
-  <!-- Card 4 -->
-  <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInLeft animate__delay-1s">
-    <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image3.jpg" alt="Witryna Www Nie Znaleziona" />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
-        Witryna Www Nie Znaleziona
+    
+      <!-- Card 4 -->
+      <div class="max-w-md rounded-sm overflow-hidden shadow-xl bg-zinc-800 transition-all duration-300 animate__animated" data-animation="animate__fadeInLeft">
+        <img class="w-full grayscale hover:grayscale-0 transition-all duration-300" src="../assets/image3.jpg" alt="Witryna Www Nie Znaleziona" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-white hover:text-yellow-500 transition-all duration-300">
+            Witryna Www Nie Znaleziona
+          </div>
+          <p class="text-zinc-300 text-base">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
+        </div>
+        <div class="px-6 py-4 border-t border-zinc-700">
+          <span class="text-zinc-400 text-sm">November 14, 2022</span>
+          <span class="text-zinc-400 text-sm">• No Comments</span>
+        </div>
       </div>
-      <p class="text-zinc-300 text-base">
-        Some quick example text to build on the card title and make up the bulk of the card's content.
-      </p>
-      <a href="#" class="text-yellow-400 font-bold hover:text-yellow-500 transition-all duration-300">Read More »</a>
     </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold">UNCATEGORIZED</span>
-    </div>
-    <div class="px-6 py-4 border-t border-zinc-700">
-      <span class="text-zinc-400 text-sm">November 14, 2022</span>
-      <span class="text-zinc-400 text-sm">• No Comments</span>
-    </div>
-  </div>
-</div>
+    
 
     <!-- Footer -->
-    <footer
-      id="footer"
-      class="bg-black text-white md:px-10 px-4 md:py-28 py-12 font-Montserrat"
-    >
+    <footer id="footer" class="bg-black text-white md:px-10 px-4 md:py-28 py-12 font-Montserrat">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Column 1: Company Information -->
           <div>
             <div>
               <a href="#">
-                <img
-                  src="../assets/booklogo.jpg"
-                  class="w-3/5"
-                  alt="Company Logo"
-                />
+                <img src="../assets/booklogo.jpg" class="w-3/5" alt="Company Logo" loading="lazy" />
               </a>
             </div>
             <div>
               <p class="text-gray-300 mt-4 text-lg leading-relaxed">
-                Novel Book writing is a home-based job. You will receive books
-                with an instruction manual at your home.
+                Novel Book writing is a home-based job. You will receive books with an instruction manual at your home.
               </p>
             </div>
           </div>
-
+    
           <!-- Column 2: Quick Links -->
           <div>
             <h4 class="text-white mb-5">Quick Links</h4>
             <div class="border-t-2 border-yellow-500 mb-4"></div>
             <ul class="space-y-2">
-              <li>
-                <a class="text-gray-300 hover:underline" href="/">Home</a>
-              </li>
-              <li>
-                <a class="text-gray-300 hover:underline" href="#learn-more"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a class="text-gray-300 hover:underline" href="#services"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a class="text-gray-300 hover:underline" href="#PricePlan"
-                  >Price Plans</a
-                >
-              </li>
-              <li>
-                <a class="text-gray-300 hover:underline" href="#footer"
-                  >Contact Us</a
-                >
-              </li>
+              <li><a class="text-gray-300 hover:underline" href="/" rel="noopener">Home</a></li>
+              <li><a class="text-gray-300 hover:underline" href="#learn-more" rel="noopener">About</a></li>
+              <li><a class="text-gray-300 hover:underline" href="#services" rel="noopener">Services</a></li>
+              <li><a class="text-gray-300 hover:underline" href="#PricePlan" rel="noopener">Price Plans</a></li>
+              <li><a class="text-gray-300 hover:underline" href="#footer" rel="noopener">Contact Us</a></li>
             </ul>
           </div>
-
+    
           <!-- Column 3: Contact Us -->
           <div>
             <h4 class="text-white mb-5">Contact Us</h4>
@@ -1408,28 +1164,14 @@
               Feel free to contact us through any of the means below:
             </p>
             <div class="flex items-center mb-4">
-              <a href="tel:9680300193">
-                <img
-                  src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-22-1.png"
-                  class="w-8 h-8 mr-3"
-                  alt="Phone"
-                />
-              </a>
+              <a href="tel:9680300193"><img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-22-1.png" class="w-8 h-8 mr-3" alt="Phone" loading="lazy" /></a>
               <div>
-                <h5 class="text-white">
-                  <a href="tel:9680300193">Phone Number</a>
-                </h5>
+                <h5 class="text-white"><a href="tel:9680300193">Phone Number</a></h5>
                 <p class="text-yellow-400">+91-8076038808</p>
               </div>
             </div>
             <div class="flex items-center mb-4">
-              <a href="mailto:Contact@aliyabookspublication02.in">
-                <img
-                  src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png"
-                  class="w-8 h-8 mr-3"
-                  alt="Email"
-                />
-              </a>
+              <a href="mailto:Contact@aliyabookspublication02.in"><img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png" class="w-8 h-8 mr-3" alt="Email" loading="lazy" /></a>
               <div>
                 <a href="mailto:Contact@aliyabookspublication02.in">
                   <h5 class="text-white">Email Address</h5>
@@ -1438,13 +1180,7 @@
               </div>
             </div>
             <div class="flex items-center mb-4">
-              <a href="https://wa.me/918076038808">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/311/311337.png"
-                  class="w-8 h-8 mr-3"
-                  alt="WhatsApp"
-                />
-              </a>
+              <a href="https://wa.me/918076038808"><img src="https://cdn-icons-png.flaticon.com/512/311/311337.png" class="w-8 h-8 mr-3" alt="WhatsApp" loading="lazy" /></a>
               <div>
                 <a href="https://wa.me/918076038808">
                   <h5 class="text-white">WhatsApp</h5>
@@ -1453,33 +1189,20 @@
               </div>
             </div>
             <div class="flex items-center">
-              <img
-                src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png"
-                class="w-8 h-8 mr-3"
-                alt="Address"
-              />
+              <img src="https://aliyabookspublication02.in/wp-content/uploads/2022/11/I-20-1.png" class="w-8 h-8 mr-3" alt="Address" loading="lazy" />
               <div>
                 <h5 class="text-white">Address</h5>
-                <p class="text-yellow-400">
-                  29, Sector 18, Gurugram, Haryana 122008, India
-                </p>
+                <p class="text-yellow-400">29, Sector 18, Gurugram, Haryana 122008, India</p>
               </div>
             </div>
           </div>
-
+    
           <!-- Column 4: Location -->
           <div>
             <h4 class="text-white mb-5">Location</h4>
             <div class="border-t-2 border-yellow-500 mb-4"></div>
             <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.6414848284794!2d77.0576929745979!3d28.490341690525128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d190ba42f6395%3A0x568bbf711f345a7d!2s29%2C%20Sector%2018%2C%20Gurugram%2C%20Haryana%20122008!5e0!3m2!1sen!2sin!4v1716624909210!5m2!1sen!2sin"
-                class="w-full h-72"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.6414848284794!2d77.0576929745979!3d28.490341690525128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d190ba42f6395%3A0x568bbf711f345a7d!2s29%2C%20Sector%2018%2C%20Gurugram%2C%20Haryana%20122008!5e0!3m2!1sen!2sin!4v1716624909210!5m2!1sen!2sin" class="w-full h-72" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -1489,6 +1212,7 @@
         </div>
       </div>
     </footer>
+    
 
     <script src="main.js"></script>
   </body>
