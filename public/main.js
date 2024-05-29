@@ -99,3 +99,32 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(counterNum);
   });
 });
+
+function scrollToFooter() {
+  document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const animationClasses = element.getAttribute('data-animation').split(' ');
+        animationClasses.forEach(animationClass => {
+          element.classList.add('animate__animated', animationClass);
+        });
+        observer.unobserve(element);
+      }
+    });
+  }, options);
+
+  document.querySelectorAll('[data-animation]').forEach(element => {
+    observer.observe(element);
+  });
+});
