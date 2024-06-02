@@ -135,18 +135,23 @@ function sendWhatsAppMessage() {
   let phone = document.getElementById("phone").value;
   var content = document.getElementById("content").value;
 
-  var url =
-    "https://wa.me/918076038808?text=" +
-    "Name: " +
-    name +
-    "%0a" +
-    "Phone: " +
-    phone +
-    "%0a" +
-    "Email: " +
-    email +
-    "%0a" +
-    "Content: " +
-    content;
+  if (!name || !email || !phone || !content) {
+    return;
+  } else {
+    var url =
+      "https://wa.me/918076038808?text=" +
+      "Name: " +
+      name +
+      "%0a" +
+      "Phone: " +
+      phone +
+      "%0a" +
+      "Email: " +
+      email +
+      "%0a" +
+      "Content: " +
+      content;
+  }
+
   window.open(url, "_blank").focus();
 }
