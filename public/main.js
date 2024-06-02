@@ -158,8 +158,8 @@ function sendWhatsAppMessage() {
 
   var link;
   if (isMobile) {
-    link = `https://wa.me/918076038808?text=${message}`;
-    window.open(link, "_blank").focus();
+    link = `https://wa.me/918076038808`;
+    // window.open(link, "_self");
   } else {
     link = `https://wa.me/918076038808?text=${message}`;
     window.open(link, "_blank").focus();
