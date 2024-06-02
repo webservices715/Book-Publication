@@ -127,3 +127,42 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(element);
   });
 });
+
+
+function sendWhatsAppMessage() {
+  // Get form data
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var content = document.getElementById("content").value;
+
+  if (!name && !email && !phone && !content) {
+    alert("Please fill in at least one field.");
+    return;
+  }
+
+  var message =
+    "Name: " +
+    encodeURIComponent(name) +
+    "%0aPhone: " +
+    encodeURIComponent(phone) +
+    "%0aEmail: " +
+    encodeURIComponent(email) +
+    "%0aContent: " +
+    encodeURIComponent(content);
+
+  // Check if the user is on a mobile device
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+  var link;
+  if (isMobile) {
+    link = `whatsapp://send?phone=918076038808&text=${message}`;
+    window.open(link, "_self");
+  } else {
+    link = `https://wa.me/918076038808?text=${message}`;
+    window.open(link, "_blank").focus();
+  }
+}
