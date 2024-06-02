@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function sendEmail() {
+function sendWhatsAppMessage() {
   // Get form data
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -140,8 +140,7 @@ function sendEmail() {
     return;
   }
 
-  var subject = encodeURIComponent("Inquiry from " + name);
-  var body =
+  var message =
     "Name: " +
     encodeURIComponent(name) +
     "%0aPhone: " +
@@ -151,9 +150,18 @@ function sendEmail() {
     "%0aContent: " +
     encodeURIComponent(content);
 
-  var mailtoLink = `mailto:writewellbookspublisher@gmail.com?subject=${subject}&body=${body}`;
+  // Check if the user is on a mobile device
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
 
-  // Open the default email client with the mailto link
-  window.location.href = mailtoLink;
+  var link;
+  if (isMobile) {
+    link = `whatsapp://send?phone=918076038808&text=${message}`;
+    window.open(link, "_self");
+  } else {
+    link = `https://wa.me/918076038808?text=${message}`;
+    window.open(link, "_blank").focus();
+  }
 }
-
