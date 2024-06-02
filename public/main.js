@@ -132,26 +132,38 @@ function sendWhatsAppMessage() {
   // Get form data
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
+  var phone = document.getElementById("phone").value;
   var content = document.getElementById("content").value;
 
+  // Check if all fields are empty
   if (!name && !email && !phone && !content) {
     return;
-  } else {
-    var url =
-      "https://wa.me/918076038808?text=" +
-      "Name: " +
-      name +
-      "%0a" +
-      "Phone: " +
-      phone +
-      "%0a" +
-      "Email: " +
-      email +
-      "%0a" +
-      "Content: " +
-      content;
   }
 
-  window.open(url, "_blank").focus();
+  // Create the WhatsApp URL
+  var url =
+    "https://wa.me/918076038808?text=" +
+    "Name: " +
+    encodeURIComponent(name) +
+    "%0a" +
+    "Phone: " +
+    encodeURIComponent(phone) +
+    "%0a" +
+    "Email: " +
+    encodeURIComponent(email) +
+    "%0a" +
+    "Content: " +
+    encodeURIComponent(content);
+
+  // Check if the user is on a mobile device
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Open the WhatsApp URL
+  if (isMobile) {
+    // For mobile devices, open the WhatsApp app
+    window.location.href = url;
+  } else {
+    // For desktop, open in a new tab
+    window.open(url, "_blank").focus();
+  }
 }
