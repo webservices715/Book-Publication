@@ -158,8 +158,8 @@ function sendWhatsAppMessage() {
 
   var link;
   if (isMobile) {
-    link = `whatsapp://send?phone=918076038808&text=${message}`;
-    window.open(link, "_self");
+    link = `https://wa.me/918076038808?text=${message}`;
+    window.open(link, "_blank").focus();
   } else {
     link = `https://wa.me/918076038808?text=${message}`;
     window.open(link, "_blank").focus();
