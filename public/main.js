@@ -135,7 +135,7 @@ function sendWhatsAppMessage() {
   let phone = document.getElementById("phone").value;
   var content = document.getElementById("content").value;
 
-  if (!name || !email || !phone || !content) {
+  if (!name && !email && !phone && !content) {
     return;
   } else {
     var url =
