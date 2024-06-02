@@ -90,10 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const observer = new IntersectionObserver(
-    observerCallback,
-    observerOptions
-  );
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
 
   counterNums.forEach((counterNum) => {
     observer.observe(counterNum);
@@ -101,30 +98,55 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function scrollToFooter() {
-  document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.1
+    rootMargin: "0px",
+    threshold: 0.1,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const element = entry.target;
-        const animationClasses = element.getAttribute('data-animation').split(' ');
-        animationClasses.forEach(animationClass => {
-          element.classList.add('animate__animated', animationClass);
+        const animationClasses = element
+          .getAttribute("data-animation")
+          .split(" ");
+        animationClasses.forEach((animationClass) => {
+          element.classList.add("animate__animated", animationClass);
         });
         observer.unobserve(element);
       }
     });
   }, options);
 
-  document.querySelectorAll('[data-animation]').forEach(element => {
+  document.querySelectorAll("[data-animation]").forEach((element) => {
     observer.observe(element);
   });
 });
+
+function sendWhatsAppMessage() {
+  // Get form data
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  var content = document.getElementById("content").value;
+
+  var url =
+    "https://wa.me/918076038808?text=" +
+    "Name: " +
+    name +
+    "%0a" +
+    "Phone: " +
+    phone +
+    "%0a" +
+    "Email: " +
+    email +
+    "%0a" +
+    "Content: " +
+    content;
+  window.open(url, "_blank").focus();
+}

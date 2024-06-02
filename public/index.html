@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="../assets/writewell.jpg" />
-    <meta name="description" content="Write Wll Book Publishers offers top-notch book publishing services. From editing and design to marketing and distribution, we help authors bring their stories to life." />
+    <meta
+      name="description"
+      content="Write Wll Book Publishers offers top-notch book publishing services. From editing and design to marketing and distribution, we help authors bring their stories to life."
+    />
     <title>WRITE WELL BOOKS PUBLISHER - SQuality Publishing Services</title>
     <link rel="stylesheet" href="output.css" />
     <link
@@ -18,7 +21,9 @@
   </head>
   <body class="bg-gray-100">
     <nav class="bg-zinc-800 shadow-lg text-white px-6 md:py-6 py-8">
-      <div class="container mx-auto flex md:justify-around justify-between items-center">
+      <div
+        class="container mx-auto flex md:justify-around justify-between items-center"
+      >
         <div class="w-20 md:w-[70%] flex gap-4 items-center">
           <img
             src="../assets/writewell.jpg"
@@ -26,10 +31,13 @@
             class="w-28"
             loading="lazy"
           />
-          <div class="md:flex flex-col items-center uppercase gap-1 ml-4 hidden">
-            <p class="font-Josefin text-4xl font-bold">Write Well </p>
-            <span class="font-Josefin text-lg font-semibold">Book Publisher</span>
-
+          <div
+            class="md:flex flex-col items-center uppercase gap-1 ml-4 hidden"
+          >
+            <p class="font-Josefin text-4xl font-bold">Write Well</p>
+            <span class="font-Josefin text-lg font-semibold"
+              >Book Publisher</span
+            >
           </div>
         </div>
         <div class="flex gap-12 items-center">
@@ -416,12 +424,13 @@
         </video>
       </div>
 
+
       <div
         class="w-full lg:w-1/2 text-white bg-zinc-800 opacity-85 rounded-sm px-16 py-14 font-Josefin relative z-10"
         data-animation="animate__animated animate__bounceInLeft animate__slower"
       >
         <h2 class="text-2xl font-bold mb-6 text-center">Apply For Work</h2>
-        <form>
+        <form id="applyForm">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             <div>
               <label for="name" class="block mb-2">Name</label>
@@ -430,6 +439,7 @@
                 id="name"
                 name="name"
                 autocomplete="off"
+                required
                 placeholder="Name"
                 class="w-full p-2 bg-transparent border-b-2 border-blue-600 focus:outline-none"
               />
@@ -441,6 +451,7 @@
                 id="email"
                 name="email"
                 autocomplete="off"
+                required
                 placeholder="Email"
                 class="w-full p-2 bg-transparent border-b-2 border-blue-600 focus:outline-none"
               />
@@ -453,24 +464,30 @@
               id="phone"
               name="phone"
               autocomplete="off"
+              required
               placeholder="Phone Number"
               class="w-full p-2 bg-transparent border-b-2 border-blue-600 focus:outline-none"
             />
           </div>
           <div class="mb-4">
-            <label for="content" class="block mb-2">Content</label>
+            <label for="content" class="block mb-5">Content</label>
             <select
               id="content"
               name="content"
+              required
               class="w-full p-2 bg-zinc-700 border-b-2 border-blue-600 focus:outline-none"
             >
-              <option>Project F5</option>
-              <option>Project F6</option>
+              <option>A5 Day English Project</option>
+              <option>A7 DAY ENGLISH</option>
+              <option>A7 DAY HINDI</option>
+              <option>A14 DAY ENGLISH</option>
+              <option>A14 DAY HINDI</option>
+              <option>A26 DAY PROJECT</option>
             </select>
           </div>
           <button
-            type="button"
-            onclick="scrollToFooter()"
+            type="submit"
+            onclick="sendWhatsAppMessage()"
             class="w-full bg-blue-600 text-white mt-4 px-4 py-2 font-semibold rounded-sm hover:bg-blue-800 transition-colors"
           >
             Order Content
@@ -485,6 +502,8 @@
           </p>
         </div>
       </div>
+
+
     </div>
 
     <div
@@ -527,7 +546,7 @@
                 style="color: #444444"
               >
                 Anyone Can <br />
-                Write 
+                Write
               </p>
               <p
                 class="w-full lg:w-3/5 font-Josefin text-base lg:text-lg"
