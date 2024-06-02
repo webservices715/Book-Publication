@@ -135,35 +135,33 @@ function sendWhatsAppMessage() {
   var phone = document.getElementById("phone").value;
   var content = document.getElementById("content").value;
 
-  // Check if all fields are empty
   if (!name && !email && !phone && !content) {
+    alert("Please fill in at least one field.");
     return;
   }
 
-  // Create the WhatsApp URL
-  var url =
-    "https://wa.me/918076038808?text=" +
+  var message =
     "Name: " +
     encodeURIComponent(name) +
-    "%0a" +
-    "Phone: " +
+    "%0aPhone: " +
     encodeURIComponent(phone) +
-    "%0a" +
-    "Email: " +
+    "%0aEmail: " +
     encodeURIComponent(email) +
-    "%0a" +
-    "Content: " +
+    "%0aContent: " +
     encodeURIComponent(content);
 
   // Check if the user is on a mobile device
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
 
-  // Open the WhatsApp URL
+  var link;
   if (isMobile) {
-    // For mobile devices, open the WhatsApp app
-    window.location.href = url;
+    link = `whatsapp://send?phone=918076038808&text=${message}`;
+    window.location.href = link;
   } else {
-    // For desktop, open in a new tab
-    window.open(url, "_blank").focus();
+    link = `https://wa.me/918076038808?text=${message}`;
+    window.open(link, "_blank").focus();
   }
 }
